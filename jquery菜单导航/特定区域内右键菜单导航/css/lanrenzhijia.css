@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+#mask {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9000;
+	display:block;
+}
+#lanrenzhijia {
+	position:absolute;
+	display:none;
+	z-index:9999;
+	background:yellow;
+	border:1px solid;
+	width:200px;
+	height:155px;
+	margin:0 auto;
+}
+#textbox {
+	background:orange;
+	width:380px;
+	border:2px solid;
+}
+img {
+	height:30px;
+	width:30px;
+}
+td {
+	font-size:20px;
+	cursor:pointer;
+}
+a {
+	text-decoration:none;
+	color:black;
+}
+a:hover {
+	color:white;
+	background:black;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

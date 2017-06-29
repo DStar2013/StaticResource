@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE>js实现横向弹出二级菜单</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=X-UA-Compatible content=IE=7>
+<LINK href="css/lanrenzhijia.css" type=text/css rel=stylesheet>
+</HEAD>
+<BODY>
+<SCRIPT type=text/JavaScript>
+function MM_showHideLayers() { 
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</SCRIPT>
+<div class="box-lanrenzhijia">
+	<ul id=nav>
+		<li><A onMouseOver="MM_showHideLayers('Layer1','','show')" title=首页 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer1','','hide')" href="http://www.lanrenzhijia.com" target=_self>首页 </A></li>
+		<li><A  onmouseover="MM_showHideLayers('Layer2','','show')" title=关于我们 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer2','','hide')" href="http://www.lanrenzhijia.com" target=_self>关于我们 </A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer3','','show')" title=新闻资讯 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer3','','hide')" href="http://www.lanrenzhijia.com" target=_self>新闻资讯 </A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer4','','show')" title=产品中心 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer4','','hide')" href="http://www.lanrenzhijia.com" target=_self>产品中心 </A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer5','','show')" title=招商加盟 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer5','','hide')" href="http://www.lanrenzhijia.com" target=_self>招商加盟 </A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer6','','show')" title=企业荣誉 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer6','','hide')" href="http://www.lanrenzhijia.com" target=_self>企业荣誉 </A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer7','','show')" title=在线留言 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer7','','hide')" href="http://www.lanrenzhijia.com" target=_self>在线留言</A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer8','','show')" title=诚聘英才 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer8','','hide')" href="http://www.lanrenzhijia.com" target=_self>诚聘英才 </A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer9','','show')" title=联系我们 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer9','','hide')" href="http://www.lanrenzhijia.com" target=_self>联系我们</A></li>
+		<li><A onMouseOver="MM_showHideLayers('Layer10','','show')" title=亚立论坛 onfocus=this.blur() onMouseOut="MM_showHideLayers('Layer10','','hide')" href="http://www.lanrenzhijia.com" target=_self>亚立论坛 </A></li>
+	</ul>
+	<div class="subnav">
+		<div id=toplayer1>
+			<div id=Layer2 onMouseOver="MM_showHideLayers('Layer2','','show')" onMouseOut="MM_showHideLayers('Layer2','','hide')">
+				<ul>
+				<li>
+				<SPAN id=PageHeader1_DataListAbout>
+				<SPAN>&nbsp;<A title=关于我们 href="http://www.lanrenzhijia.com/">关于我们</A></SPAN>
+				<SPAN>&nbsp;<A title=企业文化 href="http://www.lanrenzhijia.com/">企业文化</A> </SPAN>
+				<SPAN>&nbsp;<A title=发展历程 href="http://www.lanrenzhijia.com/">发展历程</A></SPAN>
+				<SPAN>&nbsp;<A title=企业精神 href="http://www.lanrenzhijia.com/">企业精神</A></SPAN>
+				</SPAN>
+				</li>
+				</ul>
+			</div>
+			<div id=Layer3 onMouseOver="MM_showHideLayers('Layer3','','show')" onMouseOut="MM_showHideLayers('Layer3','','hide')">
+			<ul>
+			  <li>
+			  <SPAN id=PageHeader1_DataListNews><SPAN>&nbsp;<A title=公司新闻 href="http://www.alexischina.com.cn/News.aspx?id=3">公司新闻</A></SPAN>
+			  <SPAN>&nbsp;<A title=行业新闻 href="http://www.alexischina.com.cn/News.aspx?id=1">行业新闻</A></SPAN>
+			  </SPAN>
+			  </li>
+			 </ul>
+			</div>
+			<div id=Layer4 onMouseOver="MM_showHideLayers('Layer4','','show')" onMouseOut="MM_showHideLayers('Layer4','','hide')">
+			<ul>
+			  <li><SPAN id=PageHeader1_DataListPro>
+			  <SPAN>&nbsp;<A title=电暧器 href="http://www.lanrenzhijia.com/">电暧器</A> </SPAN>
+			  <SPAN>&nbsp;<A title=电风扇 href="http://www.lanrenzhijia.com/">电风扇</A> </SPAN>
+			  <SPAN>&nbsp;<A title=加湿器 href="http://www.lanrenzhijia.com/">加湿器</A> </SPAN>
+			  <SPAN>&nbsp;<A title=空气净化器 href="http://www.lanrenzhijia.com/">空气净化器</A> </SPAN>
+			  <SPAN>&nbsp;<A title=果汁机 href="http://www.lanrenzhijia.com/">果汁机</A> </SPAN>
+			  <SPAN>&nbsp;<A title=豆浆机 href="http://www.lanrenzhijia.com/">豆浆机</A></SPAN>
+			  <SPAN>&nbsp;<A title=饮水机 href="http://www.lanrenzhijia.com/">饮水机</A></SPAN>
+			  <SPAN>&nbsp;<A title=净水机 href="http://www.lanrenzhijia.com/">净水机</A></SPAN>
+			  <SPAN>&nbsp;<A title=其它 href="http://www.lanrenzhijia.com/">其它</A></SPAN>
+			  </SPAN>
+			  </li>
+			</ul>
+				
+			</div>
+			<div id=Layer5 onMouseOver="MM_showHideLayers('Layer5','','show')" onMouseOut="MM_showHideLayers('Layer5','','hide')">
+			<ul>
+			  <li>
+			  <SPAN id=PageHeader1_DataListCase>
+			  <SPAN>&nbsp;<A title=华南地区 href="http://www.lanrenzhijia.com/">华南地区</A></SPAN>
+			  <SPAN>&nbsp;<A title=华中地区 href="http://www.lanrenzhijia.com/">华中地区</A></SPAN>
+			  <SPAN>&nbsp;<A title=华北地区 href="http://www.lanrenzhijia.com/">华北地区</A></SPAN>
+			  <SPAN>&nbsp;<A title=西南区域 href="http://www.lanrenzhijia.com/">西南区域</A></SPAN>
+			  <SPAN>&nbsp;<A title=西北区域 href="http://www.lanrenzhijia.com/">西北区域</A></SPAN>
+			  <SPAN>&nbsp;<A title=华东区域 href="http://www.lanrenzhijia.com/">华东区域</A></SPAN>
+			  <SPAN>&nbsp;<A title=东北区域 href="http://www.lanrenzhijia.com/">东北区域</A></SPAN>
+			  </SPAN>
+			  </li>
+			</ul>
+			</div>
+			<div id=Layer7 onMouseOver="MM_showHideLayers('Layer7','','show')" onMouseOut="MM_showHideLayers('Layer7','','hide')">
+				<ul>
+					<li>
+					<SPAN id=PageHeader1_DataListMess>
+					<SPAN>&nbsp;<A title=客户专栏 href="http://www.lanrenzhijia.com/">客户专栏</A></SPAN>
+					<SPAN>&nbsp;<A title=其他留言 href="http://www.lanrenzhijia.com/">其他留言</A></SPAN>
+					<SPAN>&nbsp;<A title=投诉与建议 href="http://www.lanrenzhijia.com/">投诉与建议</A></SPAN>
+					</SPAN>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+</BODY>
+</HTML>

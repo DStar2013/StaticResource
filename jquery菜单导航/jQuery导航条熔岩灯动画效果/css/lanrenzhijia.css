@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+a, img {
+	border:0;
+}
+body {
+	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+/* nav */
+.nav {
+	position:relative;
+	height:28px;
+	width:755px;
+	margin:60px auto 0 auto;
+}
+.nav li {
+	float:left;
+	margin-left:9px;
+	display:inline;
+	height:26px;
+	line-height:26px;
+}
+.nav li a {
+	padding:0 8px;
+	font-size:14px;
+	color:#4f6f8c;
+	font-weight:700;
+	text-decoration:none;
+}
+.nav li a:hover {
+	text-decoration:none;
+}
+.nav li.last a {
+	font-weight:normal;
+	font-size:12px;
+}
+.nav li.cur a {
+	color:#39aa42;
+}
+.nav .nav-line {
+	position:absolute;
+	border-bottom:2px solid #39aa42;
+	height:0;
+	overflow:hidden;
+	left:0;
+	bottom:0;
+}
+/* help-side */
+.help-side {
+	width:184px;
+	position:relative;
+	margin:60px auto 0 auto;
+}
+.help-side dl {
+	background:url(../images/line02.gif) no-repeat 0 bottom;
+	padding-bottom:14px;
+	margin-bottom:12px;
+	line-height:24px;
+}
+.help-side dl.last {
+	background:none;
+}
+.help-side dl dt {
+	font-weight:700;
+	color:#333;
+}
+.help-side dl dd a {
+	color:#5e5e5e;
+	text-decoration:none;
+}
+.help-side dl dd.cur a, .help-side dl dd a:hover {
+	color:#35C4FD;
+	text-decoration:none;
+}
+.help-side .side-slider {
+	position:absolute;
+	width:3px;
+	background:#35C4FD;
+	height:20px;
+	left:-18px;
+	top:27px;
+}

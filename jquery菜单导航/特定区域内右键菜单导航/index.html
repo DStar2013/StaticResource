@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>特定区域内右键菜单导航</title> 
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>-->
+  <script type="text/javascript">
+  var windowwidth;
+  var windowheight;
+  var checkmenu;
+  $(window).ready(function() {
+  
+   $('#lanrenzhijia').hide();
+       
+	   $('#textbox').bind("contextmenu",function(e){
+	   
+	   windowwidth = $(window).width();
+	   windowheight = $(window).height();
+	   checkmenu = 1;
+	   $('#mask').css({
+	   'height': windowheight,
+	   'width': windowwidth
+	   });
+            $('#lanrenzhijia').show(500);  
+			  $('#lanrenzhijia').css({
+			  'top':e.pageY+'px',
+			  'left':e.pageX+'px'
+			  });
+			  
+			  return false;
+       });
+
+
+
+$('#mask').click(function(){
+$(this).height(0);
+$(this).width(0);
+$('#lanrenzhijia').hide(500);
+checkmenu = 0;
+return false;
+});
+
+$('#mask').bind("contextmenu",function(){
+$(this).height(0);
+$(this).width(0);
+$('#lanrenzhijia').hide(500);
+checkmenu = 0;
+return false;
+});
+
+$(window).resize(function(){
+if(checkmenu == 1) {
+windowwidth = $(window).width();
+	   windowheight = $(window).height();
+	   $('#mask').css({
+	   'height': windowheight,
+	   'width': windowwidth,
+	   });
+}
+
+});
+  });
+  </script>
+</head>
+
+<body>
+<div id="lanrenzhijia" style="margin:0 auto;">
+<table cellspace="3">
+<tr>
+<td ><img src="images/twitter.png" ></td><td><a href="#">tweet me</a></td>
+</tr>
+<tr>
+<td ><img src="images/facebook.png" > </td><td><a href="#">facebook share</a></td>
+</tr>
+<tr>
+<td ><img src="images/myspace.png" > </td><td><a href="#">myspace share</a></td>
+</tr>
+<tr>
+<td ><img src="images/mail.png" > </td><td><a href="#">e-mail this</a></td>
+</tr>
+
+</table>
+
+</div>
+<div id="mask"> </div>
+<div id="textbox">
+<p>Howdy,
+Its Hitesh here, if you love me you can call me Hitz.<p/>
+
+<p><b>I'm a JavaScript and PHP Programmer.</b><p/>
+
+<p>Believe in Simplicity and Smartness at the same time. <p/>
+
+<p>I'm dedicated to OPEN SOURCE. Are you? <p/>
+ </div>
+</body>
+</html>

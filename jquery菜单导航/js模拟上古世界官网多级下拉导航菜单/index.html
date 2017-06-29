@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>js模拟上古世界官网多级下拉导航菜单</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/lanrenzhijia.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="topNav" id="topNav">
+            <div class="topNav2">
+                <div class="navBox">
+                    <div class="navIndexBg">
+                        <div class="navIL"></div>
+                        <div class="navIL navIR"></div>
+                        <div class="navIM"></div>
+                    </div>
+                    <div class="navMain" id="navMain">
+                        <!-- 主导航放这里 -->
+                        <div class="navIndex" id="navIndex">
+                            <ul>
+                                <li class=""><a href="http://www.lanrenzhijia.com/" title="官网首页" class="nav4">官网首页</a></li>
+                                <li class="  "><a href="http://www.lanrenzhijia.com/" title="游戏资料">游戏资料</a></li>
+                                <li class="nav1"><a href="http://www.lanrenzhijia.com/" title="视觉盛宴">视觉盛宴</a></li>
+                                <li class=""><a href="http://www.lanrenzhijia.com/" title="游戏下载">游戏下载</a></li>
+                                <li class=""><a href="http://www.lanrenzhijia.com/" title="新闻活动">新闻活动</a></li>
+                                <li class=""><a href="http://www.lanrenzhijia.com/" title="玩家社区">玩家社区</a></li>
+                            </ul>
+                        </div>
+                        <div class="navSub" id="navSub">
+                            <dl class="nav2">
+                                <dt>游戏资料</dt>
+                                <dd><a href="http://www.lanrenzhijia.com/banner" title="">焦点图</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/famous" title="" target="_blank">名站特效</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/service" title="">在线客服</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/tab" title="">tab标签</a></dd>
+                            </dl>
+                            <dl class="nav1">
+                                <dt>视觉盛宴</dt>
+                                <dd><a href="http://www.lanrenzhijia.com/album/" title="">相册代码</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/pic" title="">图片特效</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/" title="">懒人之家</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/" title="">懒人之家</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>游戏下载</dt>
+                                <dd><a href="http://www.lanrenzhijia.com/time" title="">时间日期</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/" title="">懒人之家</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/nav" title="">菜单导航</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>新闻活动</dt>
+                                <dd><a href="http://www.lanrenzhijia.com/ads" title="">广告代码</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/" title="">懒人之家</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>玩家社区</dt>
+                                <dd><a href="http://www.lanrenzhijia.com/" title="" target="_blank" onclick="pgvSendClick({hottag:'nav.sub.navE1'});">懒人之家</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/" title="" target="_blank" onclick="pgvSendClick({hottag:'nav.sub.navE2'});">懒人之家</a></dd>
+                                <dd><a href="http://www.lanrenzhijia.com/" target="_blank" title="" onclick="pgvSendClick({hottag:'nav.sub.navE3'});">懒人之家</a></dd>
+                            </dl>
+                        </div>
+                        <!-- 二级放这里 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logoBox">
+            <h1 id="logo" class="logoPNG">懒人之家</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS+JS实现的圆角边框TAB选项卡滑动门代码</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+    function $(obj){return document.getElementById(obj)}
+    function Tab(Xname,Cname,Lenght,j){for(i=1;i<Lenght;i++){eval("$('"+Xname+i+"').className='n2'");}eval("$('"+Xname+j+"').className='n1'");for(i=1;i<Lenght;i++){eval("$('"+Cname+i+"').style.display='none'");eval("$('"+Cname+j+"').style.display='block'");}}
+</script>
+</head>
+<body>
+<div style="width:500px;margin:0 auto">
+  <p>onmouseover事件</p>
+  <div class="Tab">
+    <div class="title"> <a href="#" id="a1" class="n1" onmouseover="Tab('a','ax',6,1)"><span>ASP</span></a> <a href="#" id="a2" class="n2" onmouseover="Tab('a','ax',6,2)"><span>PHP</span></a> <a href="#" id="a3" class="n2" onmouseover="Tab('a','ax',6,3)"><span>DELPHI</span></a> <a href="#" id="a4" class="n2" onmouseover="Tab('a','ax',6,4)"><span>MOOTOOLS</span></a> <a href="#" id="a5" class="n2" onmouseover="Tab('a','ax',6,5)"><span>WECLCOME TO</span></a>
+      <div></div>
+    </div>
+    <div class="tabcon">
+      <ul id="ax1">
+        <li><a href="#">JavaScript 经典效果集－第二期策划中 </a></li>
+        <li><a href="#">老猫的理想制作w3school javascript 电子书 chm版 </a></li>
+        <li><a href="#">发贴需知 | 新手入门 | 常见问题 | 精华整理 0722 </a></li>
+      </ul>
+      <ul id="ax2" style="display:none">
+        <li><a href="#" target="_blank">Serv-U 6.3 雨林木风内部中文破解版</a></li>
+        <li><a href="#" target="_blank">樱桃企业网站管理系统ASP v1.0</a></li>
+        <li><a href="#" target="_blank">校无忧在线考试系统ASP版 v1.0</a></li>
+      </ul>
+      <ul id="ax3" style="display:none">
+        <li><a href="#" target="_blank">CSS+Js制作的抽屉式菜单</a></li>
+        <li><a href="#" target="_blank">4个简洁实用的CSS横向菜单，带搜索框</a></li>
+        <li><a href="#" target="_blank">OpenCart  开源PHP网店 v1.4.94</a></li>
+      </ul>
+      <ul id="ax4" style="display:none">
+        <li><a href="#">近期技术讨论贴(持续更新:12-10) </a></li>
+        <li><a href="#">发贴需知 | 新手入门 | 常见问题 | 精华整理 0722 </a></li>
+        <li><a href="#">关于奥运期间管理及只开放邀请注册的通知</a></li>
+      </ul>
+      <ul id="ax5" style="display:none">
+        <li><a href="#" target="_blank">Serv-U 6.3 雨林木风内部中文破解版</a></li>
+        <li><a href="#" target="_blank">樱桃企业网站管理系统ASP v1.0</a></li>
+        <li><a href="#" target="_blank">校无忧在线考试系统ASP版 v1.0</a></li>
+      </ul>
+    </div>
+  </div>
+  <p>onclick事件</p>
+  <div class="Tab">
+    <div class="title"> <a href="#" id="b1" class="n1" onclick="Tab('b','bx',6,1)"><span>JAVA</span></a> <a href="#" id="b2" class="n2" onclick="Tab('b','bx',6,2)"><span>VB</span></a> <a href="#" id="b3" class="n2" onclick="Tab('b','bx',6,3)"><span>VC++</span></a> <a href="#" id="b4" class="n2" onclick="Tab('b','bx',6,4)"><span>JQUERY</span></a> <a href="#" id="b5" class="n2" onclick="Tab('b','bx',6,5)"><span>NEXT WHICH ONE……</span></a>
+      <div></div>
+    </div>
+    <div class="tabcon">
+      <ul id="bx1">
+        <li><a href="#">JavaScript 经典效果集－第二期策划中 </a></li>
+        <li><a href="#">老猫的理想制作w3school javascript 电子书 chm版 </a></li>
+        <li><a href="#">发贴需知 | 新手入门 | 常见问题 | 精华整理 0722 </a></li>
+      </ul>
+      <ul id="bx2" style="display:none">
+        <li><a href="#" target="_blank">CSS+Js制作的抽屉式菜单</a></li>
+        <li><a href="#" target="_blank">4个简洁实用的CSS横向菜单，带搜索框</a></li>
+        <li><a href="#" target="_blank">OpenCart  开源PHP网店 v1.4.94</a></li>
+      </ul>
+      <ul id="bx3" style="display:none">
+        <li><a href="#" target="_blank">Serv-U 6.3 雨林木风内部中文破解版</a></li>
+        <li><a href="#" target="_blank">樱桃企业网站管理系统ASP v1.0</a></li>
+        <li><a href="#" target="_blank">校无忧在线考试系统ASP版 v1.0</a></li>
+      </ul>
+      <ul id="bx4" style="display:none">
+        <li><a href="#">近期技术讨论贴(持续更新:12-10) </a></li>
+        <li><a href="#">发贴需知 | 新手入门 | 常见问题 | 精华整理 0722 </a></li>
+        <li><a href="#">关于奥运期间管理及只开放邀请注册的通知</a></li>
+      </ul>
+      <ul id="bx5" style="display:none">
+        <li><a href="#" target="_blank">CSS+Js制作的抽屉式菜单</a></li>
+        <li><a href="#" target="_blank">4个简洁实用的CSS横向菜单，带搜索框</a></li>
+        <li><a href="#" target="_blank">OpenCart  开源PHP网店 v1.4.94</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* 代码整理：懒人之家 lanrenzhijia.com */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/* Basic Elements */
+ul li {
+	list-style: none;
+}
+a {
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: none;
+}
+/* Backgrounds */
+
+body {
+	font: 12px/1.5 arial, verdana, sans-serif;
+	color: #777;
+}
+/*
+=================================== Horizontal Navigation ================================*/
+#hnav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 615px;
+	height: 72px;
+	background: url('../images/horiz_sprites.gif') no-repeat;
+}
+#hnav li {
+	position: absolute;
+	left: 0;
+	height: 72px;
+}
+#hnav #hnavhome {
+	width: 82px;
+	left: 0px;
+}
+#hnav #hnavlocal {
+	width: 146px;
+	left: 82px;
+}
+#hnav #hnavhigher {
+	width: 162px;
+	left: 228px;
+}
+#hnav #hnavcomm {
+	width: 143px;
+	left: 390px;
+}
+#hnav #hnavnews {
+	width: 82px;
+	left: 533px;
+}
+#hnav li a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 72px;
+	text-indent: -9999em;
+}
+/*
+=================================== Vertical Navigation ================================*/
+#vnav {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 234px;
+	height: 225px;
+	background: url('../images/vert_sprites.gif') no-repeat;
+}
+#vnav li {
+	position: absolute;
+	left: 0;
+	width: 234px;
+	height: 45px;
+}
+#vnav #hnavhome {
+	height: 45px;
+	top: 0px;
+}
+#vnav #vnavschedule {
+	height: 45px;
+	top: 45px;
+}
+#vnav #vnavmedia {
+	height: 45px;
+	top: 90px;
+}
+#vnav #vnavblog {
+	height: 45px;
+	top: 135px;
+}
+#vnav #vnavcontact {
+	height: 45px;
+	top: 180px;
+}
+#vnav li a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 234px;
+	height: 45px;
+	text-indent: -9999em;
+}

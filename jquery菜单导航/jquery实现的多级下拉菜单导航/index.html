@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>jquery实现的多级下拉菜单导航</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="css/ebadusmenu.css" />
+<script type="text/javascript" src="js/lanrenzhijia.js"></script>
+<script type="text/javascript">
+//ebadusmenu.definemenu("anchorid", "menuid", "mouseover|click")
+ebadusmenu.definemenu("badumenusel", "badumenu1", "mouseover")
+ebadusmenu.definemenu("badumenusel1", "badumenu2", "mouseover")
+ebadusmenu.definemenu("badumenusel2", "badumenu3", "mouseover")
+ebadusmenu.definemenu("badumenusel3", "badumenu4", "mouseover")
+ebadusmenu.definemenu("badumenusel4", "badumenu5", "mouseover")
+ebadusmenu.definemenu("badumenusel5", "badumenu6", "mouseover")
+ebadusmenu.definemenu("badumenusel6", "badumenu7", "mouseover")
+</script>
+</head>
+<body>
+<div style="margin:10px auto 5px auto;width:728px;clear:both;">
+  <script type="text/javascript">BAIDU_CLB_fillSlot("175922");</script>
+</div>
+<div id="headerb">
+  <div class="logob"> <img src="images/logo.png" width="220" height="65"> </div>
+  <div class="hdright">
+    <div class="hdrow">
+      <ul id="ebadu_nav" class="ebadu_nav">
+        <li> <a href="#"> 网站首页 </a> </li>
+        <span class="sep"> | </span>
+        <li> <a href="#" id="badumenusel"> 基础业务 </a> </li>
+        <span class="sep"> | </span>
+        <li class="current"> <a href="#" id="badumenusel1"> 八度云 </a> </li>
+        <span class="sep"> | </span>
+        <li> <a href="#" id="badumenusel2"> 数据中心 </a> </li>
+        <span class="sep"> | </span>
+        <li> <a href="#" id="badumenusel3"> CDN </a> </li>
+        <span class="sep"> | </span>
+        <li> <a href="#" id="badumenusel4"> 服务中心 </a> </li>
+        <span class="sep"> | </span>
+        <li> <a href="#" id="badumenusel5"> 八度应用 </a> </li>
+        <span class="sep"> | </span>
+        <li> <a href="#" id="badumenusel6"> 关于我们 </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="badumenu1" class="cssbadumenu">
+  <div class="jjt"> </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 域名注册 <span> Domain&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 英文域名(En) </a> </li>
+      <li> <a href="#"> 中文域名(Cn) </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 云虚拟主机 <span> Host&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> ASP云空间 </a> </li>
+      <li> <a href="#"> PHP云空间 </a> </li>
+      <li> <a href="#"> NET云空间 </a> </li>
+      <li> <a href="#"> JSP云空间 </a> </li>
+      <li> <a href="#"> 香港云空间 </a> </li>
+      <li> <a href="#"> 美国云空间 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 企业邮局 <span> Mail&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 八度云邮 A型 </a> </li>
+      <li> <a href="#"> 八度云邮 B型 </a> </li>
+      <li> <a href="#"> 八度云邮 C型 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="http://www.lanrenzhijia.com/" target="_blank"> 帮助中心 <span> Help&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="y_help.asp?seeid=2"> 主机帮助 </a> </li>
+      <li> <a href="y_help.asp?seeid=1"> 域名相关帮助 </a> </li>
+      <!--<li>
+
+        <a href="#">
+
+          如何购买
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <a href="#">
+
+          如何购买续费
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <a href="#">
+
+          代理专区
+
+        </a>
+
+      </li>-->
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Server&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:97028052 </li>
+      <li> 电话:4008-168-928 </li>
+    </ul>
+  </div>
+</div>
+<div id="badumenu2" class="cssbadumenu">
+  <div class="jjta"> </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 云主机 <span> Cloud&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="dx.html"> 电信云(Tele) </a> </li>
+      <li> <a href="sx.html"> 双线云(CT) </a> </li>
+      <li> <a href="hk.html"> 香港云(HK) </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 网站云 <span> Web Cloud&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> Discuz云 </a> </li>
+      <li> <a href="#"> DedeCms云 </a> </li>
+      <li> <a href="#"> Phpwind云 </a> </li>
+      <li> <a href="#"> Phpcms云 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 云分发 <span> Quality&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 云分发主机 </a> </li>
+      <li> <a href="#"> 产品特点 </a> </li>
+      <li> <a href="#"> 产品价格 </a> </li>
+      <li> <a href="#"> 客户案例 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 私有云</a>│<a href="#">弹性云<span> &raquo; </span></a> </h3>
+    <ul>
+      <li> <a href="#"> 弹性云计算 </a> </li>
+      <li> <a href="#"> 私有云计算 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 八度云优势 <span> Cloud&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 为什么购买 </a> </li>
+      <li> <a href="#"> 与VPS的区别 </a> </li>
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Services&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:613039901 </li>
+      <li> 电话:0551-4202209 </li>
+    </ul>
+  </div>
+</div>
+<div id="badumenu3" class="cssbadumenu">
+  <div class="jjtb"> </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> IDC产品 <span> Products&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 服务器租用 </a> </li>
+      <li> <a href="#"> 服务器托管 </a> </li>
+      <li> <a href="#"> 机柜批发 </a> </li>
+      <li> <a href="#"> 大带宽租赁 </a> </li>
+    </ul>
+  </div>
+  <div class="columnfour">
+    <h3 class="navt"> <a href="#" target="_blank"> VIP产品 <span> VIP&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> VIP服务器租用 </a> </li>
+      <li> <a href="#"> VIP服务器托管 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 数据中心 <span> Infos&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#" target="_blank"> 蚌埠电信机房 </a> </li>
+      <li> <a href="#" target="_blank"> 天长电信机房 </a> </li>
+      <li> <a href="#"> 铜陵联通机房 </a> </li>
+      <li> <a href="#"> 天长双线机房 </a> </li>
+      <li> <a href="#"> 香港新世界机房 </a> </li>
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Services&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:97028052 </li>
+      <li> 电话:4008-168-928 </li>
+    </ul>
+  </div>
+</div>
+<div id="badumenu4" class="cssbadumenu">
+  <div class="jjtc"> </div>
+  <div class="columnthree">
+    <h3 class="navt"> <a href="#" target="_blank"> CDN服务 <span> Services&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 应用加速服务 </a> </li>
+      <li> <a href="#"> 流媒体加速服务 </a> </li>
+      <li> <a href="#"> 文件传输加速服务 </a> </li>
+      <li> <a href="#"> 页面内容加速服务 </a> </li>
+    </ul>
+  </div>
+  <div class="columnthree cccc">
+    <h3 class="navt"> <a href="#" target="_blank"> 网站解决方案 <span> Solution&raquo; </span> </a> </h3>
+    <ul class="twoo">
+      <li> <a href="#"> 企业类网站 </a> </li>
+      <li> <a href="#"> 政府类网站 </a> </li>
+      <li> <a href="#"> 金融类网站 </a> </li>
+      <li> <a href="#"> 社交类网站 </a> </li>
+      <li> <a href="#"> 游戏类网站 </a> </li>
+      <li> <a href="#"> 广播电视类网站 </a> </li>
+      <li> <a href="#"> 新闻媒体类网站 </a> </li>
+      <li> <a href="#"> 电子商务类网站 </a> </li>
+      <li> <a href="#"> 综合类门户网站 </a> </li>
+      <li> <a href="#"> 视频音频类网站 </a> </li>
+      <li> <a href="#"> 软件服务类网站 </a> </li>
+      <li> <a href="#"> 远程教育类网站 </a> </li>
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Server&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:97049380 </li>
+      <li> 电话:0551-4279183 </li>
+    </ul>
+  </div>
+</div>
+<div id="badumenu5" class="cssbadumenu">
+  <div class="jjtd"> </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 保姆服务 <span> Baomu&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 什么是保姆服务 </a> </li>
+      <li> <a href="#"> 保姆服务类型 </a> </li>
+      <li> <a href="#"> 保姆服务收费标准 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 服务方式 <span> Service&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="http://www.lanrenzhijia.com/"> 有问必答 </a> </li>
+      <li> <a href="#"> 联系我们 </a> </li>
+      <li> <a href="http://www.lanrenzhijia.com/" target="_blank"> 帮助中心 </a> </li>
+      <li> <a href="http://www.lanrenzhijia.com/"> 投诉中心 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 购买和支付 <span> Pay&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="http://www.lanrenzhijia.com/"> 产品价格总览 </a> </li>
+      <li> <a href="#"> 付款方式 </a> </li>
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Server&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:97028065 </li>
+      <li> 电话:0551-4202217 </li>
+    </ul>
+  </div>
+</div>
+<div id="badumenu6" class="cssbadumenu">
+  <div class="jjtg"> </div>
+  <div class="column" style="width:170px;">
+    <h3 class="navt"> <a href="#" target="_blank"> 八度应用 <span> App&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 八度云信通 </a> </li>
+      <li> <a href="#"> 八度音信通 </a> </li>
+      <li> <a href="#"> 八度应用 </a> </li>
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Server&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:97028052 </li>
+      <li> 电话:4008-168-928 </li>
+    </ul>
+  </div>
+</div>
+<div id="badumenu7" class="cssbadumenu">
+  <div class="jjtf"> </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 我们是谁 <span> Who&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 关于我们 </a> </li>
+      <li> <a href="http://www.lanrenzhijia.com/" target="_blank"> 公司环境 </a> </li>
+      <li> <a href="#"> 公司资质 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 里程碑 <span> History&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 公司荣誉 </a> </li>
+      <li> <a href="#"> 八度历程 </a> </li>
+      <li> <a href="#"> LOGO释义 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="http://lanrenzhijia.com/" target="_blank"> 品牌八度 <span> Brand&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="http://www.lanrenzhijia.com/" target="_blank"> 八度视角 </a> </li>
+      <li> <a href="http://www.lanrenzhijia.com/" target="_blank"> 每周专题 </a> </li>
+      <li> <a href="http://www.lanrenzhijia.com/" target="_blank"> 八度团队 </a> </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3 class="navt"> <a href="#" target="_blank"> 招聘与联系 <span> Job&raquo; </span> </a> </h3>
+    <ul>
+      <li> <a href="#"> 加入我们 </a> </li>
+      <li> <a href="#"> 联系我们 </a> </li>
+    </ul>
+  </div>
+  <div class="column none">
+    <h3 class="navt"> <a href="#" target="_blank"> 客服中心 <span> Server&raquo; </span> </a> </h3>
+    <ul>
+      <li> QQ:6214100 </li>
+      <li> 电话:0551-4202201 </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

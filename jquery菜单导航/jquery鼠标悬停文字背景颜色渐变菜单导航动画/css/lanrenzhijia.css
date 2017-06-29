@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+a, img {
+	border:0;
+}
+.demo {
+	margin:20px auto;
+	width:800px;
+	padding:10px;
+	background:#8B8B8B;
+}
+.demo h2 {
+	padding:2px 0px;
+	font:25px, Georgia;
+	color:#fff;
+	margin-left:100px;
+}
+/* menu */
+#menu {
+	margin:20px auto;
+	width:600px;
+	height:40px;
+}
+#menu ul li {
+	float:left;
+	padding-left:10px;
+}
+.first a {
+	font-family:"微软雅黑", "宋体";
+	font-size:18px;
+	color:#fff;
+	text-decoration:none;
+	background:#303030;
+	padding:5px;
+	float:left;
+	display:block;
+}
+.second a {
+	font-family:"微软雅黑", "宋体";
+	font-size:18px;
+	color:#fff;
+	text-decoration:none;
+	background:#303030;
+	padding:5px;
+	float:left;
+	display:block;
+}
+.third a {
+	font-family:"微软雅黑", "宋体";
+	font-size:18px;
+	color:#fff;
+	text-decoration:none;
+	background:#cc0022;
+	padding:5px;
+	float:left;
+	display:block;
+}
+.fourth a {
+	font-family:"微软雅黑", "宋体";
+	font-size:18px;
+	color:#fff;
+	text-decoration:none;
+	background:#cc0022;
+	padding:5px;
+	float:left;
+	display:block;
+}
+/* 代码整理：懒人之家 lanrenzhijia.com */

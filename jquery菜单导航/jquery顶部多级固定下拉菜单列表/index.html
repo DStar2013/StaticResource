@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery顶部多级固定下拉菜单列表</title>
+	<link rel="stylesheet" href="css/lanrenzhijia.css?v=1.0">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="container">
+
+	<div id="toc-holder" class="toc-holder">
+		<a href="#" class="toc-link" id="toc-link"><span>&#9660;</span> Table of Contents</a>
+		<ul id="toc" class="toc">
+		<li class="toc-h1"><a href="#section1">1. Loomings</a>
+			<ul class="toc-sub closed">
+				<li><a href="#section1-1">1.1 Call me Ishmael</a></li>
+				<li><a href="#section1-2">1.2 Circumambulate</a></li>
+			</ul>
+		</li>
+		<li class="toc-h1"><a href="#section2">2. The Carpet-Bag</a>
+			<ul class="toc-sub closed">
+				<li><a href="#section2-1">2.1 I stuffed a shirt</a></li>
+				<li><a href="#section2-2">2.2 As most young candidates</a></li>
+			</ul>
+		</li>
+		<li class="toc-h1"><a href="#section3">3. The Spouter-Inn</a>
+			<ul class="toc-sub closed">
+				<li><a href="#section3-1">3.1 Entering that gable-ended</a></li>
+				<li><a href="#section3-2">3.2 But what most puzzled</a></li>
+			</ul>
+		</li>
+		<li class="toc-h1"><a href="#section4">4. Counterpane</a>
+			<ul class="toc-sub closed">
+				<li><a href="#section4-1">4.1 Upon waking next morning about daylight, I found Queequeg's arm thrown over me</a></li>
+				<li><a href="#section4-2">4.2 My sensations were strange</a></li>
+			</ul>
+		</li>
+		<li class="toc-h1"><a href="#section5">5. Breakfast</a>
+			<ul class="toc-sub closed">
+				<li><a href="#section5-1">5.1 I quickly followed suit</a></li>
+				<li><a href="#section5-2">5.2 You could pretty plainly tell</a></li>
+			</ul>
+		</li>
+		<li class="toc-h1"><a href="#section6">6. The Street</a>
+			<ul class="toc-sub closed">
+				<li><a href="#section6-1">6.1 If I had been astonished at first</a></li>
+				<li><a href="#section6-2">6.2 But, besides the Feegeeans</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>	
+    </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.fixedTOC.js"></script>
+<script>
+// call the plugin on the "#toc" element
+$('#toc').fixedTOC({
+	menuOpens: 'click', // or 'mouseenter'
+	scrollSpeed: 1000,
+	menuSpeed: 300,
+	useSubMenus: true,
+	resetSubMenus: true,
+	topLinkWorks: true
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 */
+   html {
+filter:expression(document.execCommand("BackgroundImageCache", false, true))
+}
+body {
+	text-align:center;
+	font:12px Verdana, sans-serif;
+	margin:5px 0
+}
+ul, ol, li {
+	margin:0;
+	padding:0;
+	border:0;
+	list-style-type:none
+}
+input, select {
+	font-size:12px
+}
+a {
+	color:#010101;
+	text-decoration:none;
+	outline:none
+}
+a:hover {
+	text-decoration:underline
+}
+.Tab {
+	height:100%;
+	text-align:left
+}
+.Tab .title, .Tab .title div, .Tab .title .n1, .Tab .title .n1 span, .Tab .title .n2, .Tab .title .n2 span {
+	background:url("../images/tab_bg.gif") no-repeat left top;
+}
+.Tab .title {
+	height:30px;
+	padding-left:10px
+}
+.Tab .title div {
+	background-position:right top;
+	display:block;
+	height:100%
+}
+.Tab .title .n1, .Tab .title .n2 {
+	background-position:left bottom;
+	height:26px;
+	line-height:26px;
+	display:block;
+	float:left;
+	text-align:center;
+	padding-left:12px;
+	margin-top:4px;
+	margin-left:1px;
+	color:#333;
+	text-decoration:none
+}
+.Tab .title .n1 span, .Tab .title .n2 span {
+	background-position:right bottom;
+	display:block;
+	padding-right:12px
+}
+.Tab .title .n2 {
+	background-position:left -30px
+}
+.Tab .title .n2 span {
+	background-position:right -30px
+}
+.tabcon ul {
+	margin:5px auto;
+	padding:0
+}
+.tabcon ul li {
+	height:24px;
+	line-height:24px;
+	padding-left:16px;
+	overflow:hidden;
+	display:block
+}

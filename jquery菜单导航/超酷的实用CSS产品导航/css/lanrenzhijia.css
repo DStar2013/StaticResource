@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 */
+body {
+	background: #fff;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+}
+#wrap {
+	width:660px;
+	position:relative;
+	background:#000;
+	height:362px;
+	padding:0 30px;
+	color:#999;
+	margin-left:25px;
+}
+#wrap a.nikon_link, #wrap a.nikon_link:visited {
+	color:#bcd;
+	font-size:10px;
+}
+#wrap a.nikon_link:hover {
+	text-decoration:none;
+}
+#flyout {
+	font-size:11px;
+	padding:0;
+	margin:0;
+	list-style:none;
+	width:24px;
+	height:360px;
+	position:absolute;
+	left:-25px;
+}
+#flyout ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+#flyout li {
+	display:block;
+	width:24px;
+	height:120px;
+	background:#1c1c1c;
+}
+#flyout li a {
+	display:block;
+	width:24px;
+	height:120px;
+	text-indent:-999px;
+	text-decoration:none;
+}
+#flyout li a.nikon {
+	background:url(../images/nikon_button.gif);
+}
+#flyout li a.canon {
+	background:url(../images/canon_button.gif);
+}
+#flyout li a.pentax {
+	background:url(../images/pentax_button.gif);
+}
+#flyout table {
+	position:absolute;
+	border-collapse:collapse;
+	top:0;
+	left:0;
+	z-index:100;
+	font-size:1em;
+}
+#flyout li {
+	float:left;
+	margin-bottom:1px;
+}
+#flyout li ul {
+	visibility:hidden;
+	position:absolute;
+	top:0;
+	left:24px;
+	width:400px;
+	height:117px;
+	border-left:1px solid #fff;
+	padding-top:4px;
+}
+#flyout li ul li {
+	display:block;
+	display:inline;
+	width:100px;
+	height:22px;
+	border:0;
+	margin:0 10px;
+	background:transparent;
+}
+#flyout li ul li a {
+	text-indent:0;
+	background:transparent;
+	display:block;
+	width:100px;
+	height:22px;
+	line-height:21px;
+	color:#bbb;
+	border-bottom:1px solid #555;
+	text-decoration:none;
+}
+#flyout li b {
+	visibility:hidden;
+	display:block;
+	width:360px;
+	height:120px;
+	position:absolute;
+	top:0;
+	left:24px;
+	background:#234;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+* html #flyout li a:hover {
+	position:relative;
+	white-space:normal;
+}
+* html #flyout li a:hover ul li a:hover {
+	color:#000;
+	background:#bcd;
+}
+#flyout li:hover {
+	position:relative;
+}
+#flyout li:hover ul li a:hover {
+	background:#bcd;
+	color:#000;
+}
+#flyout li:hover b, #flyout li a:hover b {
+	visibility:visible;
+}
+#flyout li:hover ul, #flyout li a:hover ul {
+	visibility:visible;
+}

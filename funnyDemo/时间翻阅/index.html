@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery制作一款3D立体动画特效包含3D图片旋转3D文字旋转等特效-xw素材网</title>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+.codrops-demos{height:60px;text-align:center;}
+.codrops-demos a{display:inline-block;margin:10px;color:#333;font-weight:700;line-height:30px;border-bottom:4px solid transparent;text-decoration:none;}
+.codrops-demos a:hover{color:#883d59;border-color:#883d59;}
+.codrops-demos a.current-demo,.codrops-demos a.current-demo:hover{color:#aaa;border-color:#aaa;}
+
+/* demo */
+.demo{margin:0 auto;height:320px;width:720px;}
+.demo li{height:320px;width:480px;background-color:#ccc;text-align:center;cursor:pointer;}
+.demo li.roundabout-in-focus{cursor:default;}
+.demo li span{display:block;padding-top:6em;}
+</style>
+
+</head>
+<body>
+
+<!--无视之-->
+<div class="codrops-demos">
+	<a class="current-demo" href="index.html">Demo 1</a>
+	<a href="demo2.html">Demo 2</a>
+	<a href="demo3.html">Demo 2</a>
+	<a href="demo4.html">Demo 2</a>
+	<a href="demo5.html">Demo 2</a>
+	<a href="demo6.html">Demo 2</a>
+</div>
+
+<ul class="demo">
+	<li><span>Block 1</span></li>
+	<li><span>Block 2</span></li>
+	<li><span>Block 3</span></li>
+	<li><span>Block 4</span></li>
+	<li><span>Block 5</span></li>
+</ul>
+		
+		
+<script src="js/jquery.js"></script>
+<script src="js/jquery.roundabout2.js"></script>
+<script>
+$(document).ready(function(){
+	$('.demo').roundabout();
+});
+</script>
+
+</body>
+</html>

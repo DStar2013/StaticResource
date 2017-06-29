@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>下拉菜单弹出插件</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var lr_systembtn = $("#lr_systembtn");
+	var lr_menu = $("#lr_menu");
+	lr_systembtn.mouseenter(function(){
+		t_delay= setTimeout(function(){
+			lr_menu.fadeIn("slow");
+		},200);
+	});
+	lr_systembtn.mouseleave(function(){
+		clearTimeout(t_delay);
+		lr_menu.fadeOut("slow");
+	});
+
+});
+</script>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div id="lr_systembox">
+  <div id="lr_systembtn" class="lr_systembtn"> <a href="#" class="lr_abtn"><span>鼠标移动到我身上</span></a>
+    <div id="lr_menu" class="lr_menu">
+      <dl>
+        <dt><a href="http://www.lanrenzhijia.com/" target="_blank">jquery特效</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="http://www.lanrenzhijia.com/" target="_blank">导航菜单</a></dt>
+        <dd><a href="#" target="_blank">三级菜单测试</a></dd>
+        <dd><a href="#" target="_blank">三级菜单测试</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="http://www.lanrenzhijia.com/" target="_blank">焦点幻灯片</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="http://www.lanrenzhijia.com/" target="_blank">网页特效</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="http://www.lanrenzhijia.com/" target="_blank">qq在线客服代码</a></dt>
+      </dl>
+      <dl>
+        <dt><a href="http://www.lanrenzhijia.com/" target="_blank">jquery弹出层</a></dt>
+      </dl>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+	#menu {
+	list-style:none;
+	padding:0;
+	margin:0 auto;
+	;
+	height:70px;
+	width:600px;
+}
+#menu li {
+	float:left;
+	width:109px;
+	height:inherit;
+	position:relative;
+	overflow:hidden;
+}
+#menu li a {
+	position:absolute;
+	top:20px;
+	text-indent:-999em;
+	background:url(../images/menu.png) no-repeat 0 0;
+	display:block;
+	width:109px;
+	height:inherit;
+	/* fast png fix for ie6 */
+			position:relative;
+ behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none", this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')", this.src = "transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("', '').replace('")', ''), this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')", this.runtimeStyle.backgroundImage = "none")), this.pngSet=true));
+}
+/* 代码整理：懒人之家 lanrenzhijia.com *

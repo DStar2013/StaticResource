@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery倾斜网页导航菜单_懒人之家</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="lanrenzhijia">
+	<ul class="clearfix">
+		<li class="current"><a href="http://www.lanrenzhijia.com/">首页</a></li>
+	  <li><a href='http://www.lanrenzhijia.com/flash/' >Flash素材</a></li>
+      <li><a href='http://www.lanrenzhijia.com/nav/' >菜单导航</a></li>
+      <li><a href='http://www.lanrenzhijia.com/time/' >时间日期</a></li>
+      <li><a href='http://www.lanrenzhijia.com/banner/' >焦点图</a></li>
+      <li><a href='http://www.lanrenzhijia.com/tab/' >tab标签</a></li>
+      <li><a href='http://www.lanrenzhijia.com/jquery/' >jquery特效</a></li>
+      <li><a href='http://www.lanrenzhijia.com/service/' >在线客服</a></li>
+      <li><a href='http://www.lanrenzhijia.com/ads/' >广告代码</a></li>
+      <li><a href='http://www.lanrenzhijia.com/album/' >相册代码</a></li>      
+  </ul>
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+	$(".lanrenzhijia ul li").append("<b class='pngFix'></b><p class='pngFix'></p>");
+	
+	$(".lanrenzhijia ul li").hover(function(){
+		if($(this).attr("class") != "current"){
+			$(this).children("p").stop().animate({left:"0px"},200);
+			$(this).children("a").css({color:"#0072d2"},900);
+		}
+	},function(){
+		if($(this).attr("class") != "current"){
+			$(this).children("p").stop().animate({left:"-164px"},300);
+			$(this).children("a").css({color:"#FFFFFF"},900);
+		}
+	});
+
+	$(".lanrenzhijia ul li.current").unbind("hover");
+});
+
+$(function($){
+	var left=0;
+	var length=$(".lanrenzhijia li").length;
+	for(length;length>0;length--){
+		left+=12.60;
+		$(".lanrenzhijia li").eq(length-1).css("margin-left",left)
+	}
+});
+
+function setNav(id){
+	var navList = $(".lanrenzhijia ul li");
+	$(navList).eq(id-1).addClass("current");
+}
+</script>
+</body>
+</html>

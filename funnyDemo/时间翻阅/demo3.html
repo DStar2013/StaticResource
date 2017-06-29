@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+
+<style type="text/css">
+.codrops-demos{height:60px;text-align:center;}
+.codrops-demos a{display:inline-block;margin:10px;color:#333;font-weight:700;line-height:30px;border-bottom:4px solid transparent;text-decoration:none;}
+.codrops-demos a:hover{color:#883d59;border-color:#883d59;}
+.codrops-demos a.current-demo,.codrops-demos a.current-demo:hover{color:#aaa;border-color:#aaa;}
+
+
+.crappy-plastic-part-made-in-china{background-color:#222;height:1.8em;font-size:6em;overflow:hidden;}
+.pad{width:6.8em;margin:0 auto;height:1.8em;}
+.pad ul{list-style:none;padding:0;margin:-2.15em -20px 0 0;width:0.85em;height:6em;float:left;}
+.pad li{height:2em;width:0.7em;line-height:2;background-color:#222;color:#fff;text-align:center;cursor:pointer;font-weight:bold;font-family:"Helvetica Neue", Arial, sans-serif;}
+.pad li.roundabout-in-focus{cursor:default;}
+#ampm,#ampm li{width:1.8em;}
+#ampm{margin-left:0.2em;}
+.delimiter, .delimiter li{width:0.5em;text-align:center;}
+.delimiter{margin-left:6px;margin-right:-12px;}
+.pad li span{display:block;padding-top:6em;}
+</style>
+
+<!--无视之-->
+<div class="codrops-demos">
+	<a href="index.html">Demo 1</a>
+	<a href="demo2.html">Demo 2</a>
+	<a class="current-demo" href="demo3.html">Demo 2</a>
+	<a href="demo4.html">Demo 2</a>
+	<a href="demo5.html">Demo 2</a>
+	<a href="demo6.html">Demo 2</a>
+</div>
+	
+<div class="crappy-plastic-part-made-in-china">
+	<div class="pad">
+		<ul id="hours-tens">
+			<li>&nbsp;</li>
+			<li>1</li>
+		</ul>
+		<ul id="hours-ones">
+			<li>0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+
+		<ul class="delimiter">
+			<li>:</li>
+		</ul>
+
+		<ul id="minutes-tens">
+			<li>0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<ul id="minutes-ones">
+			<li>0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+
+		<ul class="delimiter">
+			<li>.</li>
+		</ul>
+
+		<ul id="seconds-tens">
+			<li>0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<ul id="seconds-ones">
+			<li>0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+		<ul id="ampm">
+			<li>am</li>
+			<li>pm</li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.roundabout2.js"></script>
+<script type="text/javascript" src="js/jquery.roundabout-shapes2.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var breakdown = getDateBreakdown();
+	
+	$('ul#hours-tens').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.hoursTens,
+		minScale: 1
+	});
+	$('ul#hours-ones').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.hoursOnes,
+		minScale: 1
+	});
+
+	$('ul#minutes-tens').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.minutesTens,
+		minScale: 1
+	});
+	$('ul#minutes-ones').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.minutesOnes,
+		minScale: 1
+	});
+
+	$('ul#seconds-tens').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.secondsTens,
+		minScale: 1
+	});
+	$('ul#seconds-ones').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.secondsOnes,
+		minScale: 1
+	});
+
+	$('ul#ampm').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel',
+		startingChild: breakdown.ampm
+	});
+	$('ul.delimiter').roundabout({
+		easing: 'easeOutExpo',
+		shape: 'waterWheel'
+	});
+	
+	setInterval(function() {
+		var breakdown = getDateBreakdown();
+		$('ul#hours-tens').roundabout("animateToChild", breakdown.hoursTens);
+		$('ul#hours-ones').roundabout("animateToChild", breakdown.hoursOnes);
+		$('ul#minutes-tens').roundabout("animateToChild", breakdown.minutesTens);
+		$('ul#minutes-ones').roundabout("animateToChild", breakdown.minutesOnes);
+		$('ul#seconds-tens').roundabout("animateToChild", breakdown.secondsTens);
+		$('ul#seconds-ones').roundabout("animateToChild", breakdown.secondsOnes);
+		$('ul#ampm').roundabout("animateToChild", breakdown.ampm);
+	}, 1000);
+	
+});
+
+function getDateBreakdown() {
+	var date = new Date(), breakdown = {};
+	breakdown.hoursTens = (date.getHours() === 0 || date.getHours() == 23 || date.getHours() == 22 || date.getHours() == 11 || date.getHours() == 12 || date.getHours() == 10) ? 1 : 0;
+	breakdown.hoursOnes = (date.getHours() === 0 || date.getHours() > 12) ? Math.abs(date.getHours() - 12) % 10 : date.getHours() % 10;
+	breakdown.minutesTens = (date.getMinutes() - (date.getMinutes() % 10)) / 10;
+	breakdown.minutesOnes = date.getMinutes() % 10;
+	breakdown.secondsTens = (date.getSeconds() - (date.getSeconds() % 10)) / 10;
+	breakdown.secondsOnes = date.getSeconds() % 10;
+	breakdown.ampm = (date.getHours() > 11) ? 1 : 0;
+	return breakdown;
+};
+</script>
+
+</body>
+</html>

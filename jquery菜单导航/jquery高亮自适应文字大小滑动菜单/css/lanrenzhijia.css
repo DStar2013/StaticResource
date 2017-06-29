@@ -1,0 +1,89 @@
+/* 代码整理：懒人之家 lanrenzhijia.com */
+body {
+	font-family: "Arial", "Verdana", "Helvetica";
+	font-size: 0.9em;
+	margin: 1.5em;
+	background: #0059cf url('../images/bg.jpg') no-repeat top center;
+	color: #FFF;
+}
+#Wrapper {
+	width: 900px;
+	margin: auto;
+}
+h1 {
+	font-size: 18px;
+	margin: 5px 0px 10px;
+	border-bottom: 1px dotted #FFF;
+	padding: 0px 0px 3px;
+}
+ul.SlidingMenu {
+	list-style: none;
+	padding: 0em;
+}
+ul.SlidingMenu a {
+	padding: 0.62em 1.5em;
+	text-decoration: none;
+	color: #FFF;
+	outline: none;
+}
+ul.Horizontal li {
+	float: left;
+}
+.ClearFix {
+	clear: both;
+}
+#HorizontalSlidingMenu {
+	background: url('../images/menubg.png') top left repeat-x;
+}
+#HorizontalSlidingMenu li.Background {
+	background: url('../images/bg_menu_right.png') top right no-repeat;
+}
+#HorizontalSlidingMenu li.Background div {
+	background: url('../images/bg_menu.png') top left no-repeat;
+	height: 100%;
+	margin-right: 31px;
+}
+#VerticalSlidingMenu {
+	float: left;
+}
+#VerticalSlidingMenu li.Background {
+	background: #00A;
+}
+#Description {
+	background: #0858C7;
+	background: rgba(80, 80, 80, 0.5);
+	margin: 15px 0px 0px 165px;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#Description pre {
+	background: #FFF;
+	background: rgba(255, 255, 255, 0.8);
+	color: #008;
+	overflow: auto;
+	font-size: 14px;
+	border: 1px solid #FFF;
+	padding: 5px;
+}
+.ValidXHTML {
+	color: #FFF;
+	width: 880px;
+	margin: 10px auto 0px;
+	padding: 5px 10px;
+	font-size: 12px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: right;
+}
+ul li.Background {
+	background: #555;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+* html ul li.Background {
+	z-index: -10;
+}
+*:first-child+html li.Background {
+	z-index: -10;
+}

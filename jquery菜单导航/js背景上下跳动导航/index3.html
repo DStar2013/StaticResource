@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js背景上下跳动导航 #demo 03</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css" media="screen" />
+</head>
+<body>
+<h1 class="lanrenzhijia_title">js背景上下跳动导航</h1>
+<ul class="lanrenzhijia_ul">
+  <li><a href="index.html">demo1</a></li>
+  <li><a href="index2.html">demo2</a></li>
+  <li><a href="index3.html">demo3</a></li>
+</ul>
+<!-- Navigation Top Menu -->
+<div id="menu">
+  <ul id="nav">
+    <li> <a href="http://www.lanrenzhijia.com/" class="icon1"> <span>Home Page</span> </a> </li>
+    <li> <a href="http://www.lanrenzhijia.com/" class="icon2"> <span>Portfolio</span> </a> </li>
+    <li> <a href="http://www.lanrenzhijia.com/" class="icon3"> <span>Our Blog</span> </a> </li>
+    <li> <a href="http://www.lanrenzhijia.com/" class="icon4"> <span>Services</span> </a> </li>
+  </ul>
+</div>
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#nav li a')
+		.css( {backgroundPosition: "52px -240px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(52px 10px)"}, {duration:800, easing : 'easeOutBounce'})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(52px -240px)"}, {duration:500, easing : 'easeOutCubic', complete:function(){
+				$(this).css({backgroundPosition: "52px -240px"})
+			}})
+		})
+		
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery响应式二级导航显示不同内容效果</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lanrenzhijia.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+</head>
+<body>
+<div class="lanrenzhijia">
+  <ul class="megamenu skyblue">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="grid"><a href="#">Grid</a>
+      <div class="megapanel">
+        <div class="row">
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+        </div>
+        <div class="row">
+          <div class="col2"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+        </div>
+        <div class="row">
+          <div class="col3"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+        </div>
+        <div class="row">
+          <div class="col4"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+        </div>
+        <div class="row">
+          <div class="col5"></div>
+          <div class="col1"></div>
+        </div>
+        <div class="row">
+          <div class="col6"></div>
+        </div>
+        <div class="row">
+          <div class="col3"></div>
+          <div class="col3"></div>
+        </div>
+        <div class="row">
+          <div class="col2"></div>
+          <div class="col1"></div>
+          <div class="col1"></div>
+          <div class="col2"></div>
+        </div>
+        <div class="row">
+          <div class="col1"></div>
+          <div class="col4"></div>
+          <div class="col1"></div>
+        </div>
+        <div class="row">
+          <div class="col4"></div>
+          <div class="col2"></div>
+        </div>
+        <div class="row">
+          <div class="col2"></div>
+          <div class="col3"></div>
+          <div class="col1"></div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Images</a>
+      <div class="megapanel">
+        <div class="row">
+          <div class="col1"><img src="images/1.jpg" title="image"/></div>
+          <div class="col1"><img src="images/2.jpg" title="image"/></div>
+          <div class="col1"><img src="images/3.jpg" title="image"/></div>
+          <div class="col1"><img src="images/4.jpg" title="image"/></div>
+          <div class="col1"><img src="images/5.jpg" title="image"/></div>
+          <div class="col1"><img src="images/6.jpg" title="image"/></div>
+        </div>
+        <div class="row">
+          <div class="col1"><img src="images/7.jpg" title="image"/></div>
+          <div class="col1"><img src="images/8.jpg" title="image"/></div>
+          <div class="col1"><img src="images/9.jpg" title="image"/></div>
+          <div class="col1"><img src="images/10.jpg" title="image"/></div>
+          <div class="col1"><img src="images/11.jpg" title="image"/></div>
+          <div class="col1"><img src="images/12.jpg" title="image"/></div>
+        </div>
+        <div class="row">
+          <div class="col1"><img src="images/13.jpg" title="image"/></div>
+          <div class="col1"><img src="images/14.jpg" title="image"/></div>
+          <div class="col1"><img src="images/15.jpg" title="image"/></div>
+          <div class="col1"><img src="images/16.jpg" title="image"/></div>
+          <div class="col1"><img src="images/17.jpg" title="image"/></div>
+          <div class="col1"><img src="images/18.jpg" title="image"/></div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Dropdown</a>
+      <ul class="dropdown">
+        <li><a href="#">Dropdown item</a></li>
+        <li><a href="#">Dropdown item</a></li>
+        <li><a href="#">Dropdown item</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown item</a></li>
+            <li><a href="#">Dropdown item</a></li>
+            <li><a href="#">Dropdown item</a>
+              <ul class="dropdown">
+                <li><a href="#">Dropdown item</a></li>
+                <li><a href="#">Dropdown item</a></li>
+                <li><a href="#">Dropdown item</a></li>
+                <li><a href="#">Dropdown item</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown item</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Dropdown item</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a>
+      <div class="megapanel">
+        <div class="row">
+          <div class="col3">
+            <form class="contact">
+              <label for="name">Name</label>
+              <input id="name" type="text"/>
+              <label for="email">E-mail</label>
+              <input id="email" type="text"/>
+              <label for="message">Message</label>
+              <textarea rows="8" id="message"></textarea>
+              <input type="submit" value="Send"/>
+            </form>
+          </div>
+          <div class="col3">
+            <h4>Contact info</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo velit at eros feugiat ullamcorper sed sit amet velit. Cras in mattis nulla, quis vehicula tellus. Donec non ultricies tellus. Praesent venenatis, purus et aliquet sodales.</p>
+            <p>Augue velit semper turpis, id vehicula augue lacus nec lorem. Proin ultricies risus vel mauris placerat ultricies. Curabitur bibendum vulputate mi sed tincidunt. Aenean eu risus a ipsum auctor mattis. Proin sagittis eget lorem sit amet vehicula. Curabitur bibendum vulputate mi sed tincidunt.</p>
+            <div class="adress">
+              <label><strong>Megamenu Inc.</strong></label>
+              <label>Level 123, 123 Elizabeth St, Melbourne</label>
+              <label>Victoria 1234</label>
+              <label>Australia</label>
+              <label>Phone: (012) 345 6789</label>
+              <label><a href="#">megamenu@megamenu.com</a></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="right"><a href="#">Right</a></li>
+  </ul>
+</div>
+</body>
+</html>

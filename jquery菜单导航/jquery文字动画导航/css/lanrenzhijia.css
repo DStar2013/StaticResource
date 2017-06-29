@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+body {
+	background-color: #333;
+	color:#FFFFFF
+}
+a {
+	color:#FFCC00;
+}
+#menuBar {
+	/* Hide text that goes beyond
+				   the bottom of the wrapper */
+				overflow:hidden;
+	/* Give wrapper background image */
+				width:503px;
+	height:102px;
+	background: transparent url(../images/bar.jpg) no-repeat scroll left top;
+	/* Center menu on page and give it a border */
+				margin:0 auto;
+	border:10px solid #111;
+}
+#menuBar ul {
+	/* Center menu inside wrapper */
+				width:380px;
+	margin:0 auto;
+	/* Get rid of bullets */
+				list-style-type: none;
+}
+#menuBar ul li {
+	/* Make menu horizontal */
+				float:left;
+	/* Add spacing between menu items */
+				padding-right:40px;
+}
+#menuBar a {
+	/* Give each menu item a background image */
+				width:55px;
+	height:102px;
+	display:block;
+	background: transparent url(../images/logos.jpg) no-repeat scroll left top;
+	/* Push text down below bottom of wrapper*/
+				padding-top:100px;
+	/* Beautify Text*/
+				color:#ddd;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	text-decoration: none;
+	font-size:10pt;
+	font-weight:bold;
+	outline:none;
+}
+#menuBar a:hover {
+	/* change background image for rollover state */
+				background-image:url(../images/logos-over.jpg);
+}
+/* Position each background image accordingly
+			   to display icons */
+			#menuBar a#Home {
+	background-position:-67px top;
+}
+#menuBar a#About {
+	background-position:-166px top;
+}
+#menuBar a#Gallery {
+	background-position:-266px top;
+}
+#menuBar a#Contact {
+	background-position:-373px top;
+}

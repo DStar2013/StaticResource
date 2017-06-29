@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery高亮自适应文字大小滑动菜单</title>
+<link rel="stylesheet" href="css/lanrenzhijia.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.sliding-menu.js"></script>
+<script type="text/javascript">
+jQuery(function(){
+  jQuery('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+  jQuery('#VerticalSlidingMenu .SlidingMenu').slidingMenu({ initialOpacity: 0.5 });
+});
+</script>
+</head>
+<body>
+<div id="Wrapper">
+  <div id="HorizontalSlidingMenu">
+    <ul class="SlidingMenu Horizontal">
+      <li><a href="#">First Link</a></li>
+      <li><a href="#">Second Link</a></li>
+      <li><a href="#">Third Link</a></li>
+      <li><a href="#">Fourth Link</a></li>
+      <li><a href="#">Fifth Link</a></li>
+    </ul>
+    <div class="ClearFix"></div>
+  </div>
+  <div id="VerticalSlidingMenu">
+    <ul class="SlidingMenu">
+      <li><a href="#">First Link</a></li>
+      <li><a href="#">Second Link</a></li>
+      <li><a href="#">Third Link</a></li>
+      <li><a href="#">Fourth Link</a></li>
+      <li><a href="#">Fifth Link</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

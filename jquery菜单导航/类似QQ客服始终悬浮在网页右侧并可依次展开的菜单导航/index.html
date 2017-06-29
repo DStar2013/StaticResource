@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>类似QQ客服始终悬浮在网页右侧并可依次展开的菜单导航</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.1.4.2-min.js"></script>
+</head>
+<body>
+<div class="lanrenzhijia_nav">   
+       <a href='http://www.lanrenzhijia.com/flash/'><span>0</span>Flash素材</a>
+       <a href='http://www.lanrenzhijia.com/nav/'><span>1</span>菜单导航</a>
+       <a href='http://www.lanrenzhijia.com/time/'><span>2</span>时间日期</a>
+       <a href='http://www.lanrenzhijia.com/banner/'><span>3</span>焦点图</a>
+       <a href='http://www.lanrenzhijia.com/tab/'><span>4</span>tab标签</a>
+       <a href='http://www.lanrenzhijia.com/jquery/'><span>5</span>jquery特效</a>
+       <a href='http://www.lanrenzhijia.com/service/'><span>6</span>在线客服</a>
+       <a href='http://www.lanrenzhijia.com/ads/'><span>7</span>广告代码</a>
+       <a href='http://www.lanrenzhijia.com/album/'><span>8</span>相册代码</a>
+       <a href='http://www.lanrenzhijia.com/pic/'><span>9</span>图片特效</a>
+       <a href='http://www.lanrenzhijia.com/famous/'><span>10</span>名站特效</a>
+       <a href='http://www.lanrenzhijia.com/video/'><span>11</span>视频播放</a>
+       <a href='http://www.lanrenzhijia.com/others/'><span>12</span>其他代码</a>
+</div>
+<script type="text/javascript">
+var btb=$(".lanrenzhijia_nav");
+var tempS;
+$(".lanrenzhijia_nav").hover(function(){
+	var thisObj = $(this);
+	tempS = setTimeout(function(){
+		thisObj.find("a").each(function(i){
+			var tA=$(this);
+			setTimeout(function(){
+				tA.animate({right:"0"},300);
+			},50*i);
+		});
+	},200);
+},function(){
+	if(tempS){
+		clearTimeout(tempS);
+	}
+	$(this).find("a").each(function(i){
+		var tA=$(this);
+		setTimeout(function(){
+			tA.animate({right:"-110"},300,function(){
+			});
+		},50*i);
+	});
+});
+</script>
+<div style="height:1000px;"></div>
+</body>
+</html>

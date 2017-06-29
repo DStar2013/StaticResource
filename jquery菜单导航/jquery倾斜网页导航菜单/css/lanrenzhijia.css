@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+a, img {
+	border:0;
+	text-decoration:none;
+}
+body {
+	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+	background:#E8E8E8;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	display:inline-table;
+}
+*html .clearfix {
+	height:1%;
+}
+.clearfix {
+	display:block;
+}
+*+html .clearfix {
+	min-height:1%;
+}
+/* lanrenzhijia */
+.lanrenzhijia {
+	width:355px;
+	background:url(../images/lanrenzhijia-bg.png) no-repeat 0px 0px;
+	height:370px;
+	margin:0 auto;
+}
+.lanrenzhijia ul {
+	margin:0 0 0 42px;
+}
+.lanrenzhijia ul li {
+	width:164px;
+	height:29px;
+	padding-bottom:8px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+	display:inline;
+}
+.lanrenzhijia ul li a {
+	display:block;
+	width:164px;
+	height:29px;
+	line-height:26px;
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#FFFFFF;
+	text-indent:62px;
+	overflow:hidden;
+	position:relative;
+	z-index:100000;
+}
+.lanrenzhijia ul li p {
+	position:absolute;
+	z-index:100;
+	top:0;
+	left:-164px;
+	width:164px;
+	height:29px;
+	background:url(../images/lanrenzhijia-libg.png) no-repeat;
+}
+.lanrenzhijia ul li b {
+	position:absolute;
+	z-index:100000;
+	top:0;
+	left:0;
+	display:block;
+	width:11px;
+	height:29px;
+	background:url(../images/lanrenzhijia-left.png) no-repeat;
+}
+.lanrenzhijia ul li.current p {
+	left:0;
+}
+.lanrenzhijia ul li.current a {
+	color:#0072d2;
+}
+/* 代码整理：懒人之家 lanrenzhijia.com */

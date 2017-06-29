@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery自动感应多级下拉导航菜单</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/lanrenzhijia.js"></script>
+<link rel="stylesheet" href="css/lanrenzhijia.css" type="text/css" />
+</head>
+<body>
+<div class="examples">
+    <div id="lanrenzhijia">
+        <ul class="level1">
+            <li class="level1-li"><a class="level1-a" href="#">Home</a></li>
+            <li class="level1-li"><a class="level1-a drop" href="#">Contact Us<!--[if gte IE 7]><!--></a><!--<![endif]-->
+            <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul class="level2">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Telephone</a></li>
+                    <li><a href="#">Online Form</a></li>
+                    <li><a href="#">Snail Mail Address</a><b></b></li>
+                </ul>
+            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+            <li class="level1-li"><a class="level1-a drop" href="#">Resort<!--[if gte IE 7]><!--></a><!--<![endif]-->
+            <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul class="level2">
+                    <li><a href="#">Ski Hire Facilities</a></li>
+                    <li><a class="fly" href="#">Main Ski Slopes<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="level3">
+                            <li><a href="#">Beginners Slopes</a></li>
+                            <li><a href="#">Intermediate Slopes</a></li>
+                            <li><a class="fly" href="#">Advanced Skill Levels<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                            <!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul class="level4">
+                                    <li><a href="#">Local</a></li>
+
+                                    <li><a href="#">Nearby</a></li>
+                                    <li><a href="#">With instructor</a></li>
+                                    <li><a href="#">Snow boarding</a><b></b></li>
+                                </ul>
+                            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                            <li><a href="#">Expert</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="#">Night Life</a></li>
+                    <li><a class="fly" href="#">Restaurants<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="level3">
+                            <li><a href="#">Snow Hotel</a></li>
+
+                            <li><a href="#">The Snowman</a></li>
+                            <li><a href="#">Ice Cavern</a></li>
+                            <li><a href="#">Ski Inn</a><b></b></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a class="fly" href="#">Car Hire<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="level3">
+                            <li><a href="#">From Airport</a></li>
+                            <li><a href="#">In Resort</a></li>
+                            <li><a href="#">Multiple Resorts</a><b></b></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                </ul>
+            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+            <li class="level1-li"><a class="level1-a drop" href="#">Surrounding Area<!--[if gte IE 7]><!--></a><!--<![endif]-->
+            <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul class="level2">
+                    <li><a href="#">Where to go</a></li>
+
+                    <li><a href="#">What to do</a></li>
+                    <li><a href="#">Places of interest</a></li>
+                    <li><a href="#">National parks &amp; Museums</a><b></b></li>
+                </ul>
+            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+            <li class="level1-li left"><a class="level1-a drop" href="#">Information<!--[if gte IE 7]><!--></a><!--<![endif]-->
+            <!--[if lte IE 6]><table><tr><td><![endif]-->
+                <ul class="level2">
+                    <li><a href="#">Money Exchange</a></li>
+                    <li><a class="fly" href="#">Resort Essential Information<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="level3">
+                            <li><a href="#">Lift Passes</a></li>
+                            <li><a href="#">Insurance</a></li>
+                            <li><a class="fly" href="#">Gear Rental<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                            <!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul class="level4">
+                                    <li><a href="#">Boots</a></li>
+                                    <li><a href="#">Skis</a></li>
+                                    <li><a href="#">Ski Wear</a></li>
+                                    <li><a href="#">Goggles</a><b></b></li>
+                                </ul>
+                            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                            <li><a href="#">Ski Schools</a></li>
+                            <li><a href="#">Snow Report</a></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a class="fly" href="#">Language<!--[if gte IE 7]><!--></a><!--<![endif]-->
+                    <!--[if lte IE 6]><table><tr><td><![endif]-->
+                        <ul class="level3">
+                            <li><a href="#">Austrian</a></li>
+                            <li><a href="#">German</a></li>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">English</a><b></b></li>
+                        </ul>
+                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                    </li>
+                    <li><a href="#">Short Breaks</a></li>
+                </ul>
+            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+            </li>
+            <li class="level1-li"><a class="level1-a" href="#">Privacy</a></li>
+        </ul>
+    </div>
+
+    <div style="clear:both"></div>
+</div>
+</body>
+</html>

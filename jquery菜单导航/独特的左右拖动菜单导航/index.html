@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>独特的左右拖动菜单导航</title>
+<link rel="stylesheet" type="text/css" href="css/jGlideMenu.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jQuery.jGlideMenu.067.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			// Initialize Menu
+			$('#jGlide_001').jGlideMenu({
+				tileSource	: '.jGlide_001_tiles' , 
+				demoMode	: true 
+			}).show();
+
+			// Connect "Toggle" Link	
+			$('#switch').click(function(){$(this).jGlideMenuToggle();});
+		});
+	</script>
+</head>
+<body>
+<div class="jGM_box" id="jGlide_001"> This is Example One
+  <!-- Tiles for Menu -->
+  <ul id="tile_001" class="jGlide_001_tiles" title="Tile One" alt="Description for tile number one">
+    <li rel="tile_002">Link One</li>
+    <li rel="tile_003">Link Two</li>
+    <li rel="tile_004">Link Three</li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 1</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 2</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 3</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 4</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 5</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 6</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 7</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google 8</a></li>
+  </ul>
+  <ul id="tile_002" class="jGlide_001_tiles" title="Tile Two" alt="Another Tile in This Example">
+    <li rel="tile_005">Click Here</li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Google</a></li>
+  </ul>
+  <ul id="tile_003" class="jGlide_001_tiles" title="Tile Three" alt="Third Tile is loaded up">
+    <li><a href="http://www.lanrenzhijia.com">Link to Google</a></li>
+  </ul>
+  <ul id="tile_004" class="jGlide_001_tiles" title="Search Engines" alt="Find your favorite search engine">
+    <li><a href="http://www.lanrenzhijia.com">Link to Google</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Yahoo!</a></li>
+    <li><a href="http://www.lanrenzhijia.com">Link to Ask.com</a></li>
+  </ul>
+  <ul id="tile_005" class="jGlide_001_tiles" title="Tile Five" alt="Active Spot Light Link">
+    <li><a href="http://www.lanrenzhijia.com">Link to ASL</a></li>
+  </ul>
+  <!-- Tiles for Menu -->
+</div>
+</body>
+</html>

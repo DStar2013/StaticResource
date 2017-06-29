@@ -1,0 +1,22 @@
+/* 代码整理：懒人之家 */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif; margin:0 auto;}
+table{border-collapse:collapse;border-spacing:0;}
+
+
+a{color:#333;text-decoration:none;}
+a:hover{color:#ef4c15;}
+.box-lanrenzhijia{ width:980px; margin:20px auto;}
+#nav{ width:980px; margin:0 auto; background:url(../images/bg01.gif) repeat-x; padding-top:1px; height:42px; margin-bottom:5px; line-height:42px;}
+#nav li{ float:left; width:98px; text-align:center; background:url(../images/bg02.gif) no-repeat right top;}
+#nav li a{ display:block; height:100%; font-size:14px; color:#0b3196;}
+#nav li a:hover{ font-weight:bold; color:#ef4c15}
+#toplayer1 {Z-INDEX: 1; WIDTH: 1px; POSITION: absolute; HEIGHT: 1px}
+
+#Layer2 {Z-INDEX: 1; LEFT: 50px; VISIBILITY: hidden; WIDTH: 600px; POSITION: absolute; TOP: -10px; padding-top:10px; HEIGHT: 32px}
+#Layer3 {Z-INDEX: 1; LEFT: 200px; VISIBILITY: hidden; WIDTH: 600px; POSITION: absolute; TOP: -10px; padding-top:10px; HEIGHT: 32px}
+#Layer4 {Z-INDEX: 1; LEFT: 200px; VISIBILITY: hidden; WIDTH: 600px; POSITION: absolute; TOP: -10px; padding-top:10px; HEIGHT: 32px}
+#Layer5 {Z-INDEX: 1; LEFT: 300px; VISIBILITY: hidden; WIDTH: 500px; POSITION: absolute; TOP: -10px; padding-top:10px; HEIGHT: 32px}
+#Layer7 {Z-INDEX: 1; LEFT: 560px; VISIBILITY: hidden; WIDTH: 200px; POSITION: absolute; TOP: -10px; padding-top:10px; HEIGHT: 32px}

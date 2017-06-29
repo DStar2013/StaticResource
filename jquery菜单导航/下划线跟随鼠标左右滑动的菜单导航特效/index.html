@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/lanrenzhijia.css" rel="stylesheet" type="text/css" />
+<title>下划线跟随鼠标左右滑动的菜单导航特效</title>
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#box-lanrenzhijia").lavaLamp({
+                fx: "backout", 
+                speed: 700,
+                click: function(event, menuItem) {
+                    return false;
+                }
+            });
+        });
+    </script>
+</head>
+<body> 
+<ul class="box-lanrenzhijia" id="box-lanrenzhijia">
+    <li><a href="http://www.lanrenzhijia.com/">我的联盟</a></li>
+    <li><a href="http://www.lanrenzhijia.com/">我的推广</a></li>
+    <li><a href="http://www.lanrenzhijia.com/">效果报表</a></li>
+    <li><a href="http://www.lanrenzhijia.com/">结算中心</a></li>
+	<li><a href="http://www.lanrenzhijia.com/">个人信息</a></li>
+</ul>
+</body>
+</html>

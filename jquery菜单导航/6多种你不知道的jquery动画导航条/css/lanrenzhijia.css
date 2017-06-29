@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+a, img {
+	border:0;
+}
+body {
+	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+.demo {
+	width:680px;
+	margin:20px auto 0 auto;
+}
+.demo h1 {
+	font-size:22px;
+}
+.demo h2 {
+	font-size:16px;
+	padding:30px 0 10px 0;
+}
+/* navbox */
+.navbox {
+	height:32px;
+	overflow:hidden;
+}
+.navbox li {
+	float:left;
+	width:100px;
+	text-align:center;
+}
+.navbox li a {
+	display:block;
+	padding:5px 10px;
+	height:100%;
+	color:#FFF;
+	text-decoration:none;
+	border-right:1px solid #FFF;
+	font-size:14px;
+	font-weight:800;
+}
+.navbox li a {
+	background:url(../images/bg2.jpg) repeat 0 0;
+}
+.navbox li a:hover, .navbox li a:focus, .navbox li a:active {
+	background-position:-150px 0;
+}
+#a a {
+	background:url(../images/bg.jpg) repeat -20px 35px;
+}
+#b a {
+	background:url(../images/bg2.jpg) repeat 0 0;
+}
+#c a {
+	background:url(../images/bg3.jpg) repeat 0 0;
+}
+#d a {
+	background:url(../images/bg4.jpg) repeat 0 0;
+}
+/* navTag */
+.navTag {
+	width:680px;
+	margin:20px auto;
+	background:url(../images/bmid_111.gif) repeat-x;
+	height:62px;
+}
+.navTag li {
+	float:left;
+}
+.navTag a {
+	background:url(../images/bright_111.gif) no-repeat right top;
+	text-decoration:none;
+	display:block;
+	float:left;
+}
+.navTag a span {
+	display:block;
+	background:url(../images/bleft_111.gif) no-repeat left top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	font-weight:700;
+	line-height:62px;
+	padding:0 25px;
+}
+.navTag a:hover {
+	background-position:right bottom;
+}
+.navTag a:hover span {
+	background-position:left bottom;
+	color:#FFF;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+}
+/* 代码整理：懒人之家 lanrenzhijia.com */

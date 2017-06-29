@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>背景透明且带缓冲的CSS二级导航代码</title>
+<link type="text/css" rel="stylesheet" href="css/lanrenzhijia.css" />
+<script type="text/javascript" src="js/lanrenzhijia.js"></script>
+</head>
+<body>
+<div style="margin:0 auto 5px auto;width:728px;clear:both;">
+</div>
+<div id="body">
+  <div id="header">
+    <div><img src="images/top.jpg"></div>
+    <div id="nav1">
+      <DL class="dropdown">
+        <DT id=m1-ddheader onMouseOver=ddMenu('m1',1) onmouseout=ddMenu('m1',-1)><a href="http://www.lanrenzhijia.com">首页</a></DT>
+        <DD id=m1-ddcontent onMouseOver=cancelHide('m1') onmouseout=ddMenu('m1',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m2-ddheader onMouseOver=ddMenu('m2',1) onmouseout=ddMenu('m2',-1)><a href="http://www.lanrenzhijia.com">文章推荐</a></DT>
+        <DD id=m2-ddcontent onMouseOver=cancelHide('m2') onmouseout=ddMenu('m2',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m3-ddheader onMouseOver=ddMenu('m3',1) onmouseout=ddMenu('m3',-1)><a href="http://www.lanrenzhijia.com">网站常用</a></DT>
+        <DD id=m3-ddcontent onMouseOver=cancelHide('m3') onmouseout=ddMenu('m3',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m4-ddheader onMouseOver=ddMenu('m4',1) onmouseout=ddMenu('m4',-1)><a href="http://www.lanrenzhijia.com">菜单导航</a></DT>
+        <DD id=m4-ddcontent onMouseOver=cancelHide('m4') onmouseout=ddMenu('m4',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m5-ddheader onMouseOver=ddMenu('m5',1) onmouseout=ddMenu('m5',-1)><a href="http://www.lanrenzhijia.com">焦点图</a></DT>
+        <DD id=m5-ddcontent onMouseOver=cancelHide('m5') onmouseout=ddMenu('m5',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m6-ddheader onMouseOver=ddMenu('m6',1) onmouseout=ddMenu('m6',-1)><a href="http://www.lanrenzhijia.com">jquery特效</a></DT>
+        <DD id=m6-ddcontent onMouseOver=cancelHide('m6') onmouseout=ddMenu('m6',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m7-ddheader onMouseOver=ddMenu('m7',1) onmouseout=ddMenu('m7',-1)><a href="http://www.lanrenzhijia.com">图片特效</a></DT>
+        <DD id=m7-ddcontent onMouseOver=cancelHide('m7') onmouseout=ddMenu('m7',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.5icool.org/wangyetexiao/focus/">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m8-ddheader onMouseOver=ddMenu('m8',1) onmouseout=ddMenu('m8',-1)><a href="http://www.lanrenzhijia.com">文字特效</a></DT>
+        <DD id=m8-ddcontent onMouseOver=cancelHide('m8') onmouseout=ddMenu('m8',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m9-ddheader onMouseOver=ddMenu('m9',1) onmouseout=ddMenu('m9',-1)><a href="http://www.lanrenzhijia.com">CSS特效</a></DT>
+        <DD id=m9-ddcontent onMouseOver=cancelHide('m9') onmouseout=ddMenu('m9',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+      <DL class="dropdown">
+        <DT id=m10-ddheader onMouseOver=ddMenu('m10',1) onmouseout=ddMenu('m10',-1)><a href="http://www.lanrenzhijia.com">整站特效</a></DT>
+        <DD id=m10-ddcontent onMouseOver=cancelHide('m10') onmouseout=ddMenu('m10',-1)>
+          <UL>
+            <LI><A href="http://www.lanrenzhijia.com">二级栏目</A></LI>
+          </UL>
+        </DD>
+      </DL>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

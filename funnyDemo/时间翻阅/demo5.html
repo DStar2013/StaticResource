@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>As a Form Element</title>
+
+
+<style type="text/css">
+.codrops-demos{height:60px;text-align:center;}
+.codrops-demos a{display:inline-block;margin:10px;color:#333;font-weight:700;line-height:30px;border-bottom:4px solid transparent;text-decoration:none;}
+.codrops-demos a:hover{color:#883d59;border-color:#883d59;}
+.codrops-demos a.current-demo,.codrops-demos a.current-demo:hover{color:#aaa;border-color:#aaa;}
+
+ul{margin-bottom:3em;}
+.roundabout-holder{width:5em;height:5em;overflow:hidden;margin:0;padding:0;position:relative;list-style:none;top:-5px;}
+.roundabout-moveable-item{width:12em;height:1.5em;line-height:1.5;font-size:16px;text-align:center;cursor:pointer;color:#329;font-family:Chalkboard, Comic Sans, awful-awful-font;}
+.roundabout-in-focus{cursor:auto;}
+form{margin-top:5em;margin-bottom:28px;margin-left:224px }
+form div{width:80%;margin:0 auto;}
+.part{float:left;display:inline;width:auto;}
+.button{margin-left:2em;}
+.part.moving{margin-top:-1.70em;}
+.clear{display:block;clear:both;}
+</style>
+</head>
+<body>
+
+<!--无视之-->
+<div class="codrops-demos">
+	<a href="index.html">Demo 1</a>
+	<a href="demo2.html">Demo 2</a>
+	<a href="demo3.html">Demo 2</a>
+	<a href="demo4.html">Demo 2</a>
+	<a class="current-demo" href="demo5.html">Demo 2</a>
+	<a href="demo6.html">Demo 2</a>
+</div>
+
+<form action="#" method="post">
+	<div>
+		<div class="part">The</div>
+		<div class="part moving adjective">
+			<ul>
+				<li>quick</li>
+				<li>happy</li>
+				<li>apple</li>
+				<li>confused</li>
+				<li>drunk</li>
+			</ul>
+		</div>
+		<div class="part">brown fox</div>
+		<div class="part moving verb">
+			<ul>
+				<li>jumps</li>
+				<li>stumbles</li>
+				<li>backs</li>
+				<li>vomits</li>
+				<li>backflips</li>
+			</ul>
+		</div>				
+		<div class="part">over the</div>
+		<div class="part moving feeling">
+			<ul>
+				<li>lazy</li>
+				<li>white</li>
+				<li>sturdy</li>
+				<li>pickled</li>
+				<li>expired</li>
+			</ul>
+		</div>
+		<div class="part">dog.</div>
+		<div class="part button">
+			<input type="hidden" id="hidden-adjective" name="hidden-adjective" value="" />
+			<input type="hidden" id="hidden-verb" name="hidden-verb" value="" />
+			<input type="hidden" id="hidden-feeling" name="hidden-feeling" value="" />
+			<input type="submit" value="Post it!" name="post" id="post-it" />
+		</div>
+	</div>
+	
+	<span class="clear"></span>
+</form>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.roundabout2.js"></script>
+<script src="js/jquery.roundabout-shapes2.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.verb ul li').focus(function() {
+			$('#hidden-verb').val($(this).text());
+		});
+
+		$('.feeling ul li').focus(function() {
+			$('#hidden-feeling').val($(this).text());
+		});
+
+		$('.adjective ul li').focus(function() {
+			$('#hidden-adjective').val($(this).text());
+		});
+
+		$('ul').roundabout({
+			shape: 'waterWheel',
+			minOpacity: -1.0,
+			duration: 300,
+			easing: 'easeOutCubic'
+		});
+		
+		$('li').dblclick(function(e) {
+			e.preventDefault();
+			return false;
+		});
+		
+		$('form').submit(function(e) {
+			e.preventDefault();
+			alert('You think that the ' + $('#hidden-adjective').val() + ' brown fox ' + $('#hidden-verb').val() + ' over the ' + $('#hidden-feeling').val() + ' dog.');
+			return false;
+		});
+	});
+</script>
+
+</body>
+</html>

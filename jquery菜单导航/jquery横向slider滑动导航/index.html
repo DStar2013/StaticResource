@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8;charset=utf-8" />
+<title>jquery横向slider滑动导航</title>
+<link href="css/lanrenzhijia.css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("ul li a").each(function(){
+	$(this).hover(function(){
+		$(this).animate({width: "400px"}, {queue:false, duration:450});
+      },function() {
+		  $(this).animate({width: "128px"}, {queue:false, duration:450});
+	  });
+    });
+	/*
+		To use this you need to load jquery easing plugins
+	*/	
+    $("ul.easing li a").each(function(){
+	$(this).hover(function(){
+		$(this).animate({width: "400px"}, {queue:false, duration:450, easing:'easeOutBack'});
+      },function() {
+		  $(this).animate({width: "128px"}, {queue:false, duration:450, easing:'easeInBack'});
+	  });
+    });	
+});
+</script>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="#" title="" class="home">
+    <p><strong>Bali Web Design</strong><br />
+      Bali Web Design &amp; Web Development<br />
+      Services</p>
+    </a></li>
+  <li><a href="#blog" title="" class="blog">
+    <p><strong>Web 2.0 Blog</strong><br />
+      Web Design, Programming, Ajax <br />
+      PHP, ASP, &amp; Web 2.0 Stuffs</p>
+    </a></li>
+  <li><a href="#bali-web-services.asp" title="" class="services">
+    <p><strong>Bali Web Services</strong><br />
+      Web Design, Web Development &amp; SEO<br />
+      Services</p>
+    </a></li>
+  <li><a href="#portofolio" title="" class="portfolio">
+    <p><strong>Portfolio</strong><br />
+      Freelance Web Developer Portfolio</p>
+    </a></li>
+</ul>
+<p class="info">With Easing Options</p>
+<ul class="easing">
+  <li><a href="#" title="" class="home">
+    <p><strong>Bali Web Design</strong><br />
+      Bali Web Design &amp; Web Development<br />
+      Services</p>
+    </a></li>
+  <li><a href="#blog" title="" class="blog">
+    <p><strong>Web 2.0 Blog</strong><br />
+      Web Design, Programming, Ajax <br />
+      PHP, ASP, &amp; Web 2.0 Stuffs</p>
+    </a></li>
+  <li><a href="#bali-web-services.asp" title="" class="services">
+    <p><strong>Bali Web Services</strong><br />
+      Web Design, Web Development &amp; SEO<br />
+      Services</p>
+    </a></li>
+  <li><a href="#portofolio" title="" class="portfolio">
+    <p><strong>Portfolio</strong><br />
+      Freelance Web Developer Portfolio</p>
+    </a></li>
+</ul>
+</body>
+</html>

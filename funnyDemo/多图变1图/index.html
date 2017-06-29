@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>css3</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            background:#C7EDCC;
+        }
+        .main{
+            margin: 0 auto;
+            width: 960px;
+            height: 100%;
+
+        }
+        .model{
+            position: relative;
+            width: 700px;
+            height: 364px;
+            left: 130px;
+            top:100px;
+
+        }
+        .box-ui{
+            position: absolute;
+            padding: 10px;
+            width: 330px;
+            height: 182px; /*162*/
+            z-index: 1;
+            background: #fff;
+        }
+
+        /*合并成一个图片*/
+        .box-normal1,.box-normal2,.box-normal3,.box-normal4{
+            padding: 0;
+            width: 340px;
+            height: 172px;
+            background-repeat: no-repeat;
+            -webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            -ms-transform:rotate(0deg);
+            transform:rotate(0deg);
+            border:none;
+        }
+        .box-normal1{
+            top:0;
+            left: 0;
+            transition:all .5s ease-in .1s;
+            box-shadow:none;
+            background-position: 0 0;
+            border-top: 10px solid #fff;
+            border-left: 10px solid #fff;
+        }
+        .box-normal2{
+            top:0;
+            left: 350px;
+            transition:all .5s ease-in .1s;
+            box-shadow:none;
+            background-position: -340px 0;
+            border-top: 10px solid #fff;
+            border-right: 10px solid #fff;
+        }
+        .box-normal3{
+            top:182px;
+            left: 0;
+            transition:all .5s ease-in .1s;
+            background-position: 0 -172px;
+            border-bottom: 10px solid #fff;
+            border-left: 10px solid #fff;
+        }
+        .box-normal4{
+            top:182px;
+            left: 350px;
+            transition:all .5s ease-in .1s;
+            background-position: -340px -172px;
+            border-bottom: 10px solid #fff;
+            border-right: 10px solid #fff;
+
+        }
+
+        /*分散的图片*/
+        .box-transform1,.box-transform2,.box-transform3,.box-transform4{
+            -webkit-box-shadow: 3px 3px 5px #cecece;
+            box-shadow: 3px 3px 5px #cecece;
+        }
+        .box-transform1:hover,.box-transform2:hover,.box-transform3:hover,.box-transform4:hover{
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            -o-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+            transform:scale(1.2);
+            z-index: 9;
+        }
+
+        .box-transform1{
+            top:-45px;
+            left:-120px;
+            transition:all .5s ease-in .1s;
+            -webkit-transform:rotate(-22deg);
+            -moz-transform:rotate(-22deg);
+            -o-transform:rotate(-22deg);
+            -ms-transform:rotate(-22deg);
+            transform:rotate(-22deg);
+
+        }
+        .box-transform2{
+            top:-45px;
+            left: 360px;
+            transition:all .5s ease-in .1s;
+            -webkit-transform:rotate(18deg);
+            -moz-transform:rotate(-18deg);
+            -o-transform:rotate(-18deg);
+            -ms-transform:rotate(-18deg);
+            transform:rotate(18deg);
+        }
+        .box-transform3{
+            top: 230px;
+            left: -57px;
+            transition:all .5s ease-in .1s;
+            -webkit-transform:rotate(20deg);
+            -moz-transform:rotate(-20deg);
+            -o-transform:rotate(-20deg);
+            -ms-transform:rotate(-20deg);
+            transform:rotate(20deg);
+        }
+        .box-transform4{
+            top: 198px;
+            left: 360px;
+            transition:all .5s ease-in .1s;
+            -webkit-transform:rotate(-18deg);
+            -moz-transform:rotate(-18deg);
+            -o-transform:rotate(-18deg);
+            -ms-transform:rotate(-18deg);
+            transform:rotate(-18deg);
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border:none;
+
+        }
+
+        .left, .right {
+            width: 76px;
+            height: 112px;
+            position: absolute;
+            top: 126px;
+            z-index: 10;
+            cursor: pointer;
+            display: none;
+        }
+
+        .left {
+            background: url("images/prev.png") no-repeat;
+            left: -80px;
+        }
+
+        .right {
+            background: url("images/next.png") no-repeat;
+            right: -80px
+        }
+        .left:hover, .right:hover{
+            -webkit-transform:scale(1.1);
+            -moz-transform:scale(1.1);
+            -o-transform:scale(1.1);
+            -ms-transform:scale(1.1);
+            transform:scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="model" id="warp">
+            <div class="box1 box-ui box-transform1"><img src="images/1.jpg" alt="1"/></div>
+            <div class="box2 box-ui box-transform2"><img src="images/2.jpg" alt="2"/></div>
+            <div class="box3 box-ui box-transform3"><img src="images/3.jpg" alt="3"/></div>
+            <div class="box4 box-ui box-transform4"><img src="images/4.jpg" alt="4"/></div>
+            <div class="left" id="left"></div>
+            <div class="right" id="right"></div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+
+        var $divs = $(".box-ui");
+        var div_length = $divs.length;
+        var $imgs = $("#warp").find("img");
+        var is_click = true;
+        var now_num = null;
+        $divs.on("click",function(){
+            if(is_click){
+                var _this = $(this);
+                now_num = _this.index();
+                var _img = _this.find("img").attr("src");
+                css3photo(now_num,_img);
+                    is_click = false;
+                $("#left").fadeIn("slow");
+                $("#right").fadeIn("slow");
+            }else{
+                var index = 0;
+                for (var i = 0; i < div_length; i++) {
+                    index++;
+                    (function () {
+                        var _$this = $divs.eq(i);
+                        _$this.find("img").fadeIn(500);
+                        _$this.removeClass("box-normal" + index);
+                        _$this.addClass("box-transform" + index);
+                        _$this.css({"backgroundImage":""});
+                    })(i);
+                }
+                is_click = true;
+                $("#left").fadeOut("slow");
+                $("#right").fadeOut("slow");
+            }
+            return false;
+        });
+
+        $("#left").click(function(){
+            if(now_num == 0){
+                now_num = 3;
+            }else{
+                now_num--;
+            }
+            css3photo(now_num);
+            return false;
+        });
+        $("#right").click(function(){
+            if(now_num == 3){
+                now_num = 0;
+            }else{
+                now_num++;
+            }
+            css3photo(now_num);
+            return false;});
+
+
+        /*code 核心代码*/
+        function css3photo(now_num,_src){
+            var index = 0;
+            var $img_src = $imgs.eq(now_num).attr("src");
+            _src = _src || $img_src;
+            for (var i = 0; i < div_length; i++) {
+                index++;
+                (function () {
+                    var _$this = $divs.eq(i);
+                    _$this.find("img").delay(500).fadeOut("fast");
+                    _$this.removeClass("box-transform" + index);
+                    _$this.addClass("box-normal" + index);
+                    _$this.css({"backgroundImage":"url("+_src+")"});
+
+                })(i);
+
+            }
+        }
+
+
+    </script>
+</body>
+</html>

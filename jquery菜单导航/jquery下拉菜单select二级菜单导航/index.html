@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery下拉菜单select二级菜单导航</title>
+<link type="text/css" href="css/lanrenzhijia.css" rel="stylesheet" media="all" />
+<link type="text/css" href="css/jquery.mcdropdown.min.css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mcdropdown.min.js"></script>
+<script type="text/javascript" src="js/jquery.bgiframe.js"></script>
+<script type="text/javascript">
+	<!--//
+	// on DOM ready
+	$(document).ready(function (){
+		$("#current_rev").html("v"+$.mcDropdown.version);
+		$("#category").mcDropdown("#categorymenu");
+	});
+	//-->
+	</script>
+</head>
+<body>
+<h2 class="sectag">mcDropdown jQuery Plug-in <span id="current_rev"></span></h2>
+<!--// start example code //-->
+<p> Please select a category:<br />
+  <br>
+  <input type="text" name="category" id="category" value="" />
+</p>
+<ul id="categorymenu" class="mcdropdown_menu">
+  <li rel="1"> Arts &amp; Humanities
+    <ul>
+      <li rel="2"> Photography
+        <ul>
+          <li rel="3"> 3D </li>
+          <li rel="4"> Digital </li>
+        </ul>
+      </li>
+      <li rel="5"> History </li>
+      <li rel="6"> Literature </li>
+    </ul>
+  </li>
+  <li rel="7"> Business &amp; Economy </li>
+  <li rel="8"> Computers &amp; Internet </li>
+  <li rel="9"> Education </li>
+  <li rel="11"> Entertainment
+    <ul>
+      <li rel="12"> Movies </li>
+      <li rel="13"> TV Shows </li>
+      <li rel="14"> Music </li>
+      <li rel="15"> Humor </li>
+    </ul>
+  </li>
+  <li rel="10"> Health </li>
+</ul>
+</body>
+</html>

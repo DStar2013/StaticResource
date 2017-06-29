@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 */
+
+* {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background-color:#fff;
+}
+/*导航菜单*/
+#nav {
+	width:950px;
+	margin:20px auto;
+	height:40px;
+	line-height:40px;
+	background:url('../images/nav-bg.png');
+	display:block;
+	overflow:hidden;
+}
+#navMenu ul {
+	width:950px;
+	float:left;
+	height:40px;
+}
+#navMenu li {
+	float:left;
+	font-size:14px;
+}
+#navMenu li a {
+	color:#fff!important;
+	text-decoration:none;
+	width:91px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background-image:url('../images/navbg.png');
+	display:block;
+}
+#navMenu li a.last {
+	width:92px;
+}
+#navMenu li a.current {
+	background-position:0 -80px;
+	width:91px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	display:block;
+	color:#fff;
+}
+#navMenu li a:hover {
+	background-position:0 -40px;
+}
+/*-------- 下拉菜单 --------------*/
+.dropMenu {
+	position:absolute;
+	top:0;
+	z-index:100;
+	visibility:hidden;
+	margin-top:-2px;
+	border:1px solid #0e2c5e;
+	border-top:0;
+	background-color:#cbdef4;
+	padding:4px;
+	width:260px;
+}
+.dropMenu li {
+	float:left;
+	width:130px;
+	height:32px;
+}
+.dropMenu li a {
+	display:block;
+	padding:5px 0 5px 12px;
+	color:#0f335d;
+}
+.dropMenu a:hover {
+	text-decoration:underline;
+	color:#000;
+}

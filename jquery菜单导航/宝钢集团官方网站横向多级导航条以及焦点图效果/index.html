@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宝钢集团官方网站横向多级导航条以及焦点图效果</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.1.5.2.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script>
+    $(function(){
+      $('#slides').slides({
+        play: 5000,
+        pause: 2000,
+        hoverPause: true,
+        generatePagination: false,
+        pagination: false,
+        effect:'slide'
+        
+      });
+    });
+    
+    
+    $(function(){
+      $('#banner').slides({
+        play: 5000,
+        pause: 2000,
+        hoverPause: true,
+        generatePagination: true,
+        pagination: true,
+        effect:'fade'
+      });
+    });
+  </script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div style="width:980px; height:337px; margin:0 auto; position:relative;">
+  <div id="navBox">
+    <ul id="nav" style="height:292px">
+      <li><a href="#">首　　页</a></li>
+      <li sub="subnav1"><a href="#" target="_blank">媒体中心</a></li>
+      <li sub="subnav2"><a href="#" target="_blank">关于我们</a></li>
+      <li sub="subnav3"><a href="#" target="_blank">业务板块</a></li>
+      <li sub="subnav4"><a href="#" target="_blank">产品与服务</a></li>
+      <li sub="subnav5"><a href="#" target="_blank">社会责任</a></li>
+      <li sub="subnav6"><a href="#" target="_blank">投资者关系</a></li>
+      <li sub="subnav7"><a href="#" target="_blank">专题专栏</a></li>
+      <li sub="subnav8"><a href="#l" target="_blank">联系我们</a></li>
+    </ul>
+    <div id="subnav1" class="subnav" style="z-index:999">
+      <ul>
+        <li><a href="#" target="_blank">宝钢新闻</a></li>
+        <li><a href="#" target="_blank">视频新闻</a></li>
+        <li><a href="#" target="_blank">传媒摘要</a></li>
+        <li><a href="#" target="_blank">国资要闻</a></li>
+        <li><a href="#" target="_blank">关注与视野</a></li>
+        <li><a href="#" target="_blank">行业资讯</a></li>
+      </ul>
+      <dl>
+        <dt>公司出版物</dt>
+        <dd><a href="#" target="_blank">社会责任报告</a></dd>
+        <dd><a href="#" target="_blank">宝钢指南</a></dd>
+        <dd><a href="#" target="_blank">学习与创新</a></dd>
+        <dd><a href="#" target="_blank">宝钢文艺</a></dd>
+        <dd><a href="http://tv.lanrenzhijia.com" target="_blank">宝钢文化经典故事</a></dd>
+        <dd><a href="#" target="_blank">宝钢三十年画册</a></dd>
+        <dd><a href="#" target="_blank">宝钢经济与管理</a></dd>
+        <dd><a href="#" target="_blank">宝钢培训</a></dd>
+        <dd><a href="#" target="_blank">宝钢技术</a></dd>
+        <dd><a href="#" target="_blank">世界钢铁</a></dd>
+      </dl>
+      <dl>
+        <dt>公司影片</dt>
+        <dd><a href="#" target="_blank">公司形象片</a></dd>
+        <dd><a href="#" target="_blank">产品宣传片</a></dd>
+      </dl>
+    </div>
+    <div class="subnav" id="subnav2" style="z-index:999">
+      <ul class="subnav_left90">
+        <li><a href="#" target="_blank">公司介绍</a></li>
+        <li><a href="#" target="_blank">组织机构</a></li>
+        <li><a href="#" target="_blank">董事长致辞</a></li>
+        <li style="background-image:none">
+          <dl>
+            <dt>公司高管</dt>
+            <dd><a href="#" target="_blank">董事会</a></dd>
+            <dd><a href="#" target="_blank">高级管理人员</a></dd>
+          </dl>
+        </li>
+        <li><a href="#" target="_blank">人力资源</a></li>
+        <li><a href="#" target="_blank">技术创新</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" target="_blank">宝钢党建</a></li>
+        <li><a href="#" target="_blank">宝钢工会</a></li>
+        <li><a href="#" target="_blank">宝钢文化</a></li>
+        <li><a href="#" target="_blank">宝钢VI</a></li>
+        <li style="background-image:none">
+          <dl>
+            <dt>资质荣誉</dt>
+            <dd><a href="#" target="_blank">外界认可</a></dd>
+            <dd><a href="#" target="_blank">资质认证</a></dd>
+          </dl>
+        </li>
+        <li><a href="#" target="_blank">大事记</a></li>
+      </ul>
+    </div>
+    <div id="subnav3" class="subnav" style="z-index:999">
+      <dl class="subnav_left90">
+        <dt>钢铁主业</dt>
+        <dd><a href="#" target="_blank">宝钢股份</a></dd>
+        <dd><a href="#" target="_blank">八一钢铁</a></dd>
+        <dd><a href="#" target="_blank">宁波钢铁</a></dd>
+        <dd><a href="#" target="_blank">韶关钢铁</a></dd>
+        <dd><a href="#" target="_blank">宝钢不锈</a></dd>
+        <dd><a href="#" target="_blank">宝钢特材</a></dd>
+      </dl>
+      <dl style="margin-top:20px">
+        <dt>多元产业</dt>
+        <dd><a href="#" target="_blank">资源开发及物流</a></dd>
+        <dd><a href="#" target="_blank">钢材延伸加工</a></dd>
+        <dd><a href="#" target="_blank">工程技术服务</a></dd>
+        <dd><a href="#" target="_blank">煤化工</a></dd>
+        <dd><a href="#" target="_blank">金融投资</a></dd>
+        <dd><a href="#" target="_blank">生产服务</a></dd>
+      </dl>
+    </div>
+    <div id="subnav4" class="subnav" style="z-index:999">
+      <ul style="margin-top:20px; margin-left:90px">
+        <li style="background-image:none">
+          <dl>
+            <dt>产品目录</dt>
+            <dd><a href="#" target="_blank">碳钢系列</a></dd>
+            <dd><a href="#" target="_blank">不锈钢系列</a></dd>
+            <dd><a href="#" target="_blank">特钢系列</a></dd>
+          </dl>
+        </li>
+        <li><a href="#" target="_blank">新品推介</a></li>
+        <li style="background-image:none">
+          <dl>
+            <dt>认证证书</dt>
+            <dd><a href="#" target="_blank">体系认证</a></dd>
+            <dd><a href="#" target="_blank">产品认证</a></dd>
+          </dl>
+        </li>
+        <li><a href="#" target="_blank">产品手册</a></li>
+        <li><a href="#" target="_blank">产品宣传片</a></li>
+      </ul>
+      <ul style="margin-top:20px; width:120px">
+        <li style="background-image:none">
+          <dl>
+            <dt>营销网络</dt>
+            <dd><a href="#" target="_blank">国内贸易服务体系</a></dd>
+            <dd><a href="#" target="_blank">海外贸易服务体系</a></dd>
+            <dd><a href="#" target="_blank">加工服务体系</a></dd>
+            <dd><a href="#" target="_blank">售后服务体系</a></dd>
+          </dl>
+        </li>
+        <li><a href="#" target="_blank">电子商务</a></li>
+      </ul>
+    </div>
+    <div id="subnav5" class="subnav" style="z-index:999">
+      <ul>
+        <li><a href="#" target="_blank">社会责任实践</a></li>
+        <li><a href="#" target="_blank">价值创造</a></li>
+        <li><a href="#" target="_blank">环境管理</a></li>
+        <li><a href="#" target="_blank">利益相关者</a></li>
+        <li><a href="#" target="_blank">社会奉献</a></li>
+        <li><a href="#" target="_blank">社会责任报告</a></li>
+      </ul>
+    </div>
+    <div id="subnav6" class="subnav" style="z-index:999">
+      <h1 style="margin-top:18px; margin-left:85px">[宝钢股份]</h1>
+      <ul class="subnav_left90" style="margin-top:0px">
+        <li style="background-image:none">
+          <dl>
+            <dt>公司公告</dt>
+            <dd><a href="#" target="_blank">公告板</a></dd>
+            <dd><a href="#" target="_blank">重大事项公告</a></dd>
+          </dl>
+        </li>
+        <li><a href="#" target="_blank">公司治理</a></li>
+        <li style="background-image:none">
+          <dl>
+            <dt>财务信息</dt>
+            <dd><a href="#" target="_blank">定期财务报告</a></dd>
+            <dd><a href="#" target="_blank">经营业绩</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <ul style="margin-top:0px">
+        <li style="background-image:none">
+          <dl>
+            <dt>证券信息</dt>
+            <dd><a href="#" target="_blank">股价信息</a></dd>
+            <dd><a href="#" target="_blank">股利政策</a></dd>
+            <dd><a href="#" target="_blank">股本结构</a></dd>
+            <dt>投资者关系文档</dt>
+            <dd><a href="#" target="_blank">公司年报</a></dd>
+            <dd><a href="#" target="_blank">公司实录</a></dd>
+            <dd><a href="#" target="_blank">投资者关系推介</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <ul style="margin-top:0px">
+        <li style="background-image:none">
+          <dl>
+            <dt>投资者服务</dt>
+            <dd><a href="#" target="_blank">业绩发布会回放</a></dd>
+            <dd><a href="#" target="_blank">投资者关系日历</a></dd>
+            <dd><a href="#" target="_blank">网上路演回放</a></dd>
+            <dd><a href="#" target="_blank">分析师</a></dd>
+            <dd><a href="#" target="_blank">订阅</a></dd>
+            <dt>联系我们</dt>
+            <dd><a href="#" target="_blank">联系我们</a></dd>
+            <dd><a href="#" target="_blank">常见问题</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <ul style="margin-top:10px; margin-right:20px; float:right">
+        <h1>[上市公司]</h1>
+        <li><a href="#" target="_blank">宝钢股份</a></li>
+        <li><a href="#" target="_blank">八一钢铁</a></li>
+        <li><a href="#" target="_blank">宝信软件</a></li>
+        <li><a href="#" target="_blank">韶钢松山</a></li>
+      </ul>
+    </div>
+    <div id="subnav7" class="subnav" style="z-index:999">
+      <ul style="margin-left:90px; margin-top:50px; width:185px">
+        <li><a href="#" target="_blank">宝钢专题</a></li>
+        <li style="background-image:none">
+          <dl>
+            <dt>机构专栏</dt>
+            <dd><a href="#" target="_blank">宝钢桥论坛</a></dd>
+            <dd><a href="#" target="_blank">人才开发</a></dd>
+            <dd><a href="#" target="_blank">科技之家</a></dd>
+            <dd><a href="#" target="_blank">经济管理研究</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div id="subnav8" class="subnav" style="z-index:999">
+      <ul>
+        <li><a href="#" target="_blank">联系方式</a></li>
+        <li><a href="#" target="_blank">咨询建议</a></li>
+        <li><a href="#" target="_blank">在线调查</a></li>
+        <li><a href="#" target="_blank">常见问题</a></li>
+      </ul>
+    </div>
+    <!--导航结束-->
+  </div>
+  <script type="text/javascript">
+  	nav.init();
+  </script>
+  <div id="banner" style="z-index:2">
+    <div class="slides_container" id="toggle_banner"> 
+    <img src="images/lanrenzhijia_1.jpg" width="787" height="337" alt="banner_真诚" /> 
+    <img src="images/lanrenzhijia_2.jpg" width="787" height="337" alt="banner_友爱" /> 
+    <img src="images/lanrenzhijia_3.jpg" width="787" height="337" alt="banner_创造力" />
+     </div>
+  </div>
+</div>
+</body>
+</html>

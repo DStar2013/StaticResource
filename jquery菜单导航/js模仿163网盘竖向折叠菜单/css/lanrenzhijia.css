@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 */
+html, body {
+	height:100%;
+	text-align:center;
+	font-size:12px;
+	color:#404040
+}
+.wp_sidebar {
+	background:fff;
+	width:230px;
+	margin:30px auto;
+	text-align:left;
+}
+.mo_wp {
+	background:#F7F7F7;
+	margin-bottom:4px;
+	border:1px solid #dfdfdf;
+}
+.mo_title {
+	clear:both;
+	color:#000;
+	padding:6px 8px 6px 12px;
+	cursor:pointer;
+}
+.btn_all_tiny_img {
+	background-image:url(../images/all_toolbar_tiny.gif);
+	background-repeat:no-repeat;
+}
+.mo_title_l {
+	display:block;
+	margin-right:12px;
+	width:auto;
+}
+.mo_title_r1, .mo_title_r2 {
+	display:block;
+	float:right;
+	margin-left:-12px;
+	height:12px;
+	width:12px;
+	background-position:0px 0px;
+}
+.mo_title_r2 {
+	background-position:-16px 0px;
+}
+.tbl_inner_title, .mo_title {
+	background-repeat:repeat-x;
+	background-image:url(../images/rx_2.gif);
+	background-position:0 bottom;
+	background-color:#fafafa;
+}
+.mo_con {
+	clear:both;
+	padding:8px 12px;
+	color:#CC3300;
+}

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>js+css实现背景图片自适应宽度导航代码</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<script language="javascript">
+	function getBg(num){
+		for(var id = 0;id<=8;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("mynav"+id).className="current";
+			}
+			else
+			{
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+</script>
+<div id="nav_out">
+  <div id="nav_in">
+    <div id="nav">
+      <ul>
+        <li><a href="#" onclick="javascript:getBg(0)" id="mynav0" class="current"><span>背</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(1)" id="mynav1"><span>背景</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(2)" id="mynav2"><span>背景自</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(3)" id="mynav3"><span>背景自适</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(4)" id="mynav4"><span>背景自适应</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(5)" id="mynav5"><span>背景自适应文</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(6)" id="mynav6"><span>背景自适应文本</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(7)" id="mynav7"><span>背景自适应文本长</span></a></li>
+        <li><a href="#" onclick="javascript:getBg(8)" id="mynav8"><span>背景自适应文本长度</span></a></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

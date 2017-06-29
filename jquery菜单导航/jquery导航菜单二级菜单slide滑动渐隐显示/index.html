@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery导航菜单二级菜单slide滑动渐隐显示</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<script type="text/javascript">
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		theSpan.hover(
+			function(){
+				$(this).addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},400);
+			},
+			function(){
+				$(this).removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},400,function(){
+					$(this).css({display:"none"});
+				});
+			}
+		);
+	});
+}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+
+});
+</script>
+<div class="navbox">
+  <div class="nav">
+    <ul class="clearfix">
+      <li><a class="selected" target="_blank" href="http://www.lanrenzhijia.com/"><span>网站首页</span></a></li>
+      <li class="drop-menu-effect"> <a target="_blank" href="http://www.lanrenzhijia.com/"><span>jquery代码</span></a>
+        <ul class="submenu">
+          <li><a href="http://www.lanrenzhijia.com/">jquery图片特效</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery导航菜单</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery选项卡特效</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery文字特效</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a target="_blank" href="http://www.lanrenzhijia.com/"><span>jquery图片特效</span></a>
+        <ul class="submenu">
+          <li><a href="http://www.lanrenzhijia.com/">jquery图片切换</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery幻灯片</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery图片滚动</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery图片放大镜</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery广告</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery更多特效</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a target="_blank" href="http://www.lanrenzhijia.com/"><span>jquery导航菜单</span></a>
+        <ul class="submenu">
+          <li><a href="http://www.lanrenzhijia.com/">jquery动画菜单</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery树形菜单</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery下拉菜单</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery右键菜单</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery更多特效</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a target="_blank" href="http://www.lanrenzhijia.com/"><span>jquery选项卡特效</span></a>
+        <ul class="submenu">
+          <li><a href="http://www.lanrenzhijia.com/">jquery选项卡切换</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery滑动选项卡</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery更多特效</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a target="_blank" href="http://www.lanrenzhijia.com"><span>jquery文字特效</span></a>
+        <ul class="submenu">
+          <li><a href="http://www.lanrenzhijia.com/">jquery文字滚动</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery文字闪烁</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery文字切换</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery文字数量</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery文字改变</a></li>
+          <li><a href="http://www.lanrenzhijia.com/">jquery更多特效</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

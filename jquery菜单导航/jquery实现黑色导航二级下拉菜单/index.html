@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery实现黑色导航二级下拉菜单</title>
+<script type="text/javascript" src="js/lanrenzhijia.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){
+$("ul.lanrenzhijia").parent().append("<span></span>"); 
+$("ul.topnav li span").click(function() { 
+	$(this).parent().find("ul.lanrenzhijia").slideDown('fast').show(); 
+
+	$(this).parent().hover(function() {
+	}, function(){
+		$(this).parent().find("ul.lanrenzhijia").slideUp('slow'); 
+	});
+	}).hover(function() { 
+		$(this).addClass("subhover"); 
+	}, function(){	
+		$(this).removeClass("subhover"); 
+});
+});
+</script>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="lanrenzhijia">
+    <div id="header">
+        <ul class="topnav">
+            <li><a href="http://www.lanrenzhijia.com">站长特效</a></li>
+            <li>
+                <a href="http://www.lanrenzhijia.com">一号菜单</a>
+                <ul class="lanrenzhijia">
+                    <li><a href="http://www.lanrenzhijia.com">网页特效</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">js特效</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">广告代码</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">特效代码</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">js网页特效</a></li>
+					<li><a href="http://www.lanrenzhijia.com">网页特效代码</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">js特效代码</a></li>
+					<li><a href="http://www.lanrenzhijia.com">站长特效网</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">站长特效</a></li>
+					<li><a href="http://www.lanrenzhijia.com">网页教程</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">您的网站</a>
+                <ul class="lanrenzhijia">
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">你自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                </ul>
+            </li>
+			<li>
+                <a href="#">您的网站</a>
+                <ul class="lanrenzhijia">
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                    <li><a href="http://www.lanrenzhijia.com">您自定义</a></li>
+                </ul>
+            </li>
+            <li><a href="#">您的网站</a></li>
+            <li><a href="#">您的网站</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
