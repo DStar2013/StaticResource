@@ -1,0 +1,2 @@
+# StaticResource
+my StaticResource 
